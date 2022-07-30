@@ -1,0 +1,30 @@
+@mixin toggle(){
+    font-size:30px;
+    cursor:pointer;
+    display:flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.toggle-right {
+    @include toggle();
+  }
+ 
+  .toggle-left {
+    @include toggle();
+    justify-content: flex-start;
+  }
+
+@each $key, $val in $colors {
+    .toggle-right-#{$key} {
+      @include toggle();
+      color: lighten($val, 5);
+    }
+   
+    .toggle-left-#{$key} {
+      @include toggle();
+      color: lighten($val, 5);
+      justify-content: flex-start;
+    }
+  }
+   

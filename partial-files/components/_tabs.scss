@@ -1,0 +1,36 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: $base-padding;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+      /* Style the buttons inside the tab */
+    button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      button:hover {
+        background-color: #ddd;
+      }
+      button.active {
+        background-color: #ccc;
+      }
+      .active:after {
+        content: "";
+    }
+  }
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding:$base-padding;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 $base-border-radius $base-border-radius;
+  }

@@ -1,0 +1,27 @@
+// variables & functions
+@import '../partial-files/function';
+@import '../partial-files/variables';
+
+// base & layouts
+@import '../partial-files/defaults';
+@import '../partial-files/breakpoints';
+@import '../partial-files/grid';
+
+// colors
+@import '../partial-files/colors';
+
+//components(button, card, navbar)
+@import '../partial-files/components/_form';
+@import '../partial-files/components/_overlay';
+@import '../partial-files/components/_card';
+@import '../partial-files/components/_button';
+@import '../partial-files/components/_toggle';
+@import '../partial-files/components/_sidenav';
+@import '../partial-files/components/_accordion';
+@import '../partial-files/components/_carousel';
+@import '../partial-files/components/_modal';
+@import '../partial-files/components/_tabs';
+
+//utilities(margin, padding,opacity)
+@import '../partial-files/spacing';
+
