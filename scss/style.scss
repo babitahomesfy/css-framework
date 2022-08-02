@@ -6,11 +6,13 @@
 @import '../partial-files/defaults';
 @import '../partial-files/breakpoints';
 @import '../partial-files/grid';
+@import '../partial-files/media_queries';
 
 // colors
 @import '../partial-files/colors';
 
 //components(button, card, navbar)
+@import '../partial-files/components/icons';
 @import '../partial-files/components/_form';
 @import '../partial-files/components/_overlay';
 @import '../partial-files/components/_card';
@@ -21,6 +23,7 @@
 @import '../partial-files/components/_carousel';
 @import '../partial-files/components/_modal';
 @import '../partial-files/components/_tabs';
+@import '../partial-files/components/_table';
 
 //utilities(margin, padding,opacity)
 @import '../partial-files/spacing';

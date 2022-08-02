@@ -5,6 +5,7 @@
     background-color: #f1f1f1;
     padding: $base-padding;
     border-radius: $base-border-radius $base-border-radius 0 0;
+    box-shadow: $base-box-shadow;
       /* Style the buttons inside the tab */
     button {
         background-color: inherit;
@@ -17,10 +18,12 @@
         font-size: 17px;
       }
       button:hover {
-        background-color: #ddd;
+        background-color: #ccc;
+        color: black;
       }
       button.active {
         background-color: #ccc;
+        color: white;
       }
       .active:after {
         content: "";
@@ -33,4 +36,5 @@
     border: 1px solid #ccc;
     border-top: none;
     border-radius: 0 0 $base-border-radius $base-border-radius;
+    box-shadow: $base-box-shadow;
   }

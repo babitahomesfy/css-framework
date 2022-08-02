@@ -1,8 +1,45 @@
-form{
+@mixin form-base{
+    width: 370px;
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    .form-title{
+        text-align: center;
+        margin-bottom: $base-margin;
+    }
     .form-input{
+        width: 100%;
         padding: 12px;
         border-radius: 5px;
-        border: 1px solid #ccc;
+        font-size: $base-font-size;
+    }
+    .form-phone-group{
+        display: flex;
+        select{
+            margin-right: 12px;
+        }
+    }
+    button{
+        width: 100%;
+    }
+    ::placeholder{
+        font-size: $base-font-size;
+    }
+}
+
+.form{
+    @include form-base();
+    .form-input{
+        border: $base-border-thickness solid #ccc;
+        outline: none;
+    }
+}
+
+.form-border-bottom{
+    @include form-base();
+    .form-input{
+        border-radius: 0;
+        border: none;
+        border-bottom: $base-border-thickness solid #ccc;
         outline: none;
     }
 }

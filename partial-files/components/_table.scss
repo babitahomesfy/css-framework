@@ -1,0 +1,57 @@
+@mixin table{
+    width: 100%;
+    padding: $base-padding;
+    th,td{
+        padding: $base-padding;
+        text-align: center;
+    }
+}
+
+@mixin table-rounded{
+    border-radius: $base-border-radius;
+}
+
+.table-bordered{
+    @include table();
+    border: $base-border-thickness solid black;
+    border-collapse: collapse;
+}
+
+.table-box{
+    @include table-rounded();
+    min-width: fit-content;
+    width: 100%;
+    .table-rounded{
+        @include table();
+        padding: 0px;
+    }
+    .table-rounded-bordered{
+        @include table();
+        padding: 0px;
+        th,td{
+            border-bottom: $base-border-thickness solid white;
+            border-right: $base-border-thickness solid white;
+            border-collapse: collapse;
+        }
+        tr td:last-child, tr th:last-child{
+            border-right: none;
+        }
+        tr:last-child  td{
+            border-bottom: none;
+        }
+    }
+}
+
+@each $key, $val in $colors {
+    .table-bordered-#{$key}{
+        @include table();
+        border: $base-border-thickness solid $val;
+        border-collapse: collapse;
+    }
+    // .table-rounded-bordered-#{$key}{
+    //     @extend .table-rounded-bordered;
+    //     th,td{
+    //         border-color: $val;
+    //     }
+    // }
+}
