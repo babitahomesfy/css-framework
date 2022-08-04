@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin table{
     width: 100%;
     padding: $base-padding;
@@ -54,4 +56,10 @@
     //         border-color: $val;
     //     }
     // }
+}
+
+@media (max-width:442px) {
+    th,td{
+        padding: math.div($base-padding, 3)!important;
+    }
 }

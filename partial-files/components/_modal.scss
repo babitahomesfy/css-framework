@@ -78,11 +78,13 @@
   }
     
   }
-  @media (max-with:768px){
+  @media (max-width:768px){
     .modal-content-form-icon{
-        display: flex;
+        flex-direction: column-reverse;
         .modal-icon-part{
             display: flex;
+            align-items: center;
+            justify-content: space-evenly;
         }
     }
 }

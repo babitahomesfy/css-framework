@@ -18,6 +18,7 @@
         &:hover{
             background-color: lighten($val, 5);
             color: #fff;
+            transition: 0.3s ease;
         }
     }
     .btn-rounded-#{$key}{
@@ -26,6 +27,7 @@
         &:hover{
             background-color: lighten($val, 5);
             color: #fff;
+            transition: 0.3s ease;
         }
     }
     .btn-outlined-#{$key}{
@@ -34,6 +36,7 @@
         &:hover{
             background-color: $val;
             color: white;
+            transition: 0.3s ease;
         }
     }
     .btn-rounded-outlined-#{$key}{
@@ -43,6 +46,7 @@
         &:hover{
             background-color: $val;
             color: white;
+            transition: 0.3s ease;
         }
     }
     .btn-complement-#{$key}{
@@ -51,6 +55,7 @@
         &:hover{
            color: light-comp($val);
            background-color: $val;
+           transition: 0.3s ease;
         }
     }
 }

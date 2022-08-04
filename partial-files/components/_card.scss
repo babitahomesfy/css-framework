@@ -3,8 +3,27 @@
     display: block;
     padding: $base-padding;
     border-radius: $base-border-radius;
-    width: fit-content;
-    max-width: 100%;
+    p,h1,h2,h3,h4,h5,h6{
+        margin-bottom: $base-margin;
+    }
+    .card-img{
+        margin-bottom: $base-margin;
+        img{
+            width: 100%;
+            border-radius: $base-border-radius;
+        }
+    }
+    .card-icon-round{
+            width: 60px;
+            height: 60px;
+            margin: 0px auto;
+            margin-top: -42px;
+            margin-bottom: $base-margin;
+            border-radius: 50%;
+            padding: 22px 23px;
+            background: #fff;
+            box-shadow: $base-box-shadow;
+    }
     .card-title{
         font-size:$font-size-lg;
         padding-bottom: $base-padding 0;
@@ -12,9 +31,6 @@
     }
     .card-body{
         font-size: $base-font-size;
-        p,h1,h2,h3,h4,h5,h6{
-            margin-bottom: $base-margin;
-        }
         a{
             text-decoration: underline;
         }
@@ -28,6 +44,9 @@
     @include card-base();
     border: $base-border-thickness solid #ddd;
     box-shadow: $base-box-shadow;
+    .card-title{
+        margin-bottom: $base-margin;
+    }
 }
 
 .card-colored{
