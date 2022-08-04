@@ -1,0 +1,37 @@
+@mixin navbar-base {
+    box-shadow: $base-box-shadow;
+    z-index: 999;
+}
+
+.simple-navbar{
+    @include navbar-base();
+    .nav-logo{
+        width: 100px;
+    }
+    .navbar-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $base-padding * 2;
+    }
+}
+
+.simple-navbar-fixed{
+    @extend.simple-navbar;
+    width: 100%;
+}
+
+.responsive-navbar{
+    @include navbar-base();
+    @extend .simple-navbar;
+    width: 100%;
+    .nav-links{
+        a{
+            margin-right: $base-margin;
+        }
+        a:hover{
+            opacity: 0.5;
+            transition: 0.3s ease;
+        }
+    }
+}

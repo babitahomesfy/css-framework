@@ -1,8 +1,11 @@
-@media (max-with:768px){
-    .modal-content-form-icon{
-        display: flex;
-        .modal-icon-part{
-            display: flex;
+@include md {
+    .banner-section{
+        margin-bottom: $section-margin-sm!important;
+        .banner-form-part{
+            max-width: 320px;
+            position: absolute!important;
+            top: 10% !important;
+            right: 3% !important;
         }
     }
-}
+  }

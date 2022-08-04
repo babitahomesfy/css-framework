@@ -1,10 +1,12 @@
 @mixin form-base{
-    width: 370px;
+    width:100% ;
+    max-width:370px;
     padding: $base-padding;
     border-radius: $base-border-radius;
     .form-title{
         text-align: center;
         margin-bottom: $base-margin;
+        font-size: 1rem;
     }
     .form-input{
         width: 100%;

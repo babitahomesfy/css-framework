@@ -46,7 +46,7 @@ $val in $grid-gaps {
 // col classes
 @include xs {
   @for $i from 1 through $grid-columns {
-    .col-#{$i}-xs {
+    .col-xs-#{$i} {
       box-sizing: border-box;
       flex-grow: 0;
       width: ($i * 100%/$grid-columns);
@@ -56,7 +56,7 @@ $val in $grid-gaps {
 
 @include sm {
   @for $i from 1 through $grid-columns {
-    .col-#{$i}-sm {
+    .col-sm-#{$i} {
       box-sizing: border-box;
       flex-grow: 0;
       width: ($i * 100%/ $grid-columns);
@@ -66,7 +66,7 @@ $val in $grid-gaps {
 
 @include md {
   @for $i from 1 through $grid-columns {
-    .col-#{$i}-md {
+    .col-md-#{$i} {
       box-sizing: border-box;
       flex-grow: 0;
       width: ($i * 100%/ $grid-columns);
@@ -76,7 +76,7 @@ $val in $grid-gaps {
 
 @include lg {
   @for $i from 1 through $grid-columns {
-    .col-#{$i}-lg {
+    .col-lg-#{$i} {
       box-sizing: border-box;
       flex-grow: 0;
       width: ($i * 100%/ $grid-columns);
@@ -86,7 +86,7 @@ $val in $grid-gaps {
 
 @include xl {
   @for $i from 1 through $grid-columns {
-    .col-#{$i}-xl {
+    .col-xl-#{$i} {
       box-sizing: border-box;
       flex-grow: 0;
       width: ($i * 100%/ $grid-columns);

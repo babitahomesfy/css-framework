@@ -1,9 +1,11 @@
 // variables & functions
+@import '../partial-files/setting';
 @import '../partial-files/function';
 @import '../partial-files/variables';
 
 // base & layouts
 @import '../partial-files/defaults';
+@import '../partial-files/global';
 @import '../partial-files/breakpoints';
 @import '../partial-files/grid';
 @import '../partial-files/media_queries';
@@ -13,19 +15,27 @@
 
 //components(button, card, navbar)
 @import '../partial-files/components/icons';
-@import '../partial-files/components/_form';
-@import '../partial-files/components/_overlay';
-@import '../partial-files/components/_card';
-@import '../partial-files/components/_button';
-@import '../partial-files/components/_toggle';
-@import '../partial-files/components/_sidenav';
-@import '../partial-files/components/_accordion';
-@import '../partial-files/components/_carousel';
-@import '../partial-files/components/_modal';
-@import '../partial-files/components/_tabs';
-@import '../partial-files/components/_table';
-@import '../partial-files/components/_lightgallery';
+@import '../partial-files/components/navbar';
+@import '../partial-files/components/form';
+@import '../partial-files/components/overlay';
+@import '../partial-files/components/card';
+@import '../partial-files/components/button';
+@import '../partial-files/components/toggle';
+@import '../partial-files/components/sidenav';
+@import '../partial-files/components/accordion';
+@import '../partial-files/components/carousel';
+@import '../partial-files/components/modal';
+@import '../partial-files/components/tabs';
+@import '../partial-files/components/table';
+@import '../partial-files/components/responsive_table';
+@import '../partial-files/components/auto_slider';
 
 //utilities(margin, padding,opacity)
 // @import '../partial-files/spacing';
 
+
+// sections start
+@import '../partial-files/components/heading';
+@import '../partial-files/sections/banner';
+@import '../partial-files/sections/overview';
+@import '../partial-files/sections/cta';

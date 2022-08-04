@@ -25,3 +25,24 @@ hr{
 img{
     max-width: 100%;
 }
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.deskBlock{
+    display: none;
+}
+.mobBlock{
+    display: block;
+}
+@media (min-width:768px) {
+    .deskBlock{
+        display: block;
+    }
+    .mobBlock{
+        display: none;
+    }
+}
