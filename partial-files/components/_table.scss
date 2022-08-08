@@ -50,11 +50,5 @@
         border: $base-border-thickness solid $val;
         border-collapse: collapse;
     }
-    // .table-rounded-bordered-#{$key}{
-    //     @extend .table-rounded-bordered;
-    //     th,td{
-    //         border-color: $val;
-    //     }
-    // }
 }
 

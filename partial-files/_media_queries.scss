@@ -9,12 +9,12 @@
         margin-bottom: $section-margin-sm;
     }
     .banner-section{
-        margin-bottom: $section-margin-sm!important;
+        margin-bottom: $section-margin-sm;
         .banner-form-part{
-            max-width: 4rem;
-            position: absolute!important;
-            top: 10% !important;
-            right: 3% !important;
+            max-width: 320px;
+            position: absolute;
+            top: 10% ;
+            right: 3% ;
         }
     }
     .modal-content-form-icon{

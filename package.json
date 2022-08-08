@@ -1,0 +1,22 @@
+{
+  "name": "hfy-css",
+  "version": "1.0.0",
+  "description": "custom css library",
+  "main": "scss/style.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babitahomesfy/css-framework.git"
+  },
+  "keywords": [
+    "framework"
+  ],
+  "author": "self-learner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babitahomesfy/css-framework/issues"
+  },
+  "homepage": "https://github.com/babitahomesfy/css-framework#readme"
+}
