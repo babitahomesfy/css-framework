@@ -8,7 +8,7 @@
 @import '../partial-files/global';
 @import '../partial-files/breakpoints';
 @import '../partial-files/grid';
-@import '../partial-files/media_queries';
+
 
 // colors
 @import '../partial-files/colors';
@@ -29,6 +29,7 @@
 @import '../partial-files/components/table';
 @import '../partial-files/components/responsive_table';
 @import '../partial-files/components/auto_slider';
+@import '../partial-files/components/floating_btn';
 
 //utilities(margin, padding,opacity)
 @import '../partial-files/spacing';
@@ -39,3 +40,8 @@
 @import '../partial-files/sections/banner';
 @import '../partial-files/sections/overview';
 @import '../partial-files/sections/cta';
+@import '../partial-files/sections/footer';
+
+
+
+@import '../partial-files/media_queries';

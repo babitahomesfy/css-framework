@@ -1,6 +1,6 @@
 /* Slideshow container */
 .slideshow-container {
-    max-width: 800px;
+    max-width: 50rem;
     width: 100%;
     position: relative;
     margin: auto;
@@ -12,19 +12,19 @@
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
-    margin-top: -22px;
+    padding:$base-padding;
+    margin-top: -$base-margin;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: $base-font-size;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 $base-border-radius $base-border-radius 0;
     user-select: none;
   }
   
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: $base-border-radius 0 0 $base-border-radius;
   }
 
   .prev:hover, .next:hover {
@@ -36,9 +36,9 @@
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
+    height:1rem;
+    width:1rem;
+    margin: 0;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -58,11 +58,6 @@
   @keyframes fade1 {
     from {opacity: .8} 
     to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
   }
 
   

@@ -1,3 +1,4 @@
+@use 'sass:math';
 $primary : #326dee;
 $secondary : #1ac888;
 $error : #d32752;
@@ -21,16 +22,8 @@ $colors: (
 );
 
 // spacing
-$base-padding : 0.75rem;
-$base-margin: 0.75rem;
-
-
-//border
-$base-border-thickness : 1px;
-$base-border-radius : 5px;
-
-//box-shadow
-$base-box-shadow : 1px 3px 5px rgba(0,0,0,0.1);
+$base-padding : 1rem;
+$base-margin: 1rem;
 
 //font size
 $base-font-size :1rem;
@@ -38,6 +31,14 @@ $font-size-sm: $base-font-size * 0.75;
 $font-size-lg: $base-font-size * 1.5;
 $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
+
+//border
+$base-border-thickness : 0.01rem;
+$base-border-radius : calc($base-font-size / 2);
+
+//box-shadow
+$base-box-shadow : 1px 3px 5px rgba(0,0,0,0.1);
+
 
 // section-margin
 $section-margin-xs: 4rem;

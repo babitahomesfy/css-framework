@@ -1,23 +1,22 @@
 @mixin form-base{
-    width:100% ;
-    max-width:370px;
+    width:100%;
     padding: $base-padding;
     border-radius: $base-border-radius;
     .form-title{
         text-align: center;
         margin-bottom: $base-margin;
-        font-size: 1rem;
+        font-size:$base-font-size;
     }
     .form-input{
         width: 100%;
-        padding: 12px;
-        border-radius: 5px;
+        padding:$base-padding;
+        border-radius:$base-border-radius;
         font-size: $base-font-size;
     }
     .form-phone-group{
         display: flex;
         select{
-            margin-right: 12px;
+            margin-right: $base-margin;
         }
     }
     button{

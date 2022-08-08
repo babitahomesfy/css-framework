@@ -1,11 +1,34 @@
 @include md {
+    .deskBlock{
+        display: block;
+    }
+    .mobBlock{
+        display: none;
+    }
+    section{
+        margin-bottom: $section-margin-sm;
+    }
     .banner-section{
         margin-bottom: $section-margin-sm!important;
         .banner-form-part{
-            max-width: 320px;
+            max-width: 4rem;
             position: absolute!important;
             top: 10% !important;
             right: 3% !important;
         }
+    }
+    .modal-content-form-icon{
+        flex-direction: column-reverse;
+        .modal-icon-part{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    }
+  }
+
+  @include xs{
+    th,td{
+        padding: $base-padding / 3;
     }
   }

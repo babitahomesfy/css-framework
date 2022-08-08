@@ -1,6 +1,6 @@
 .responsive-table{
     table {
-        border: 1px solid #ccc;
+        border: $base-border-thickness solid #ccc;
         border-collapse: collapse;
         margin: 0;
         padding: 0;
@@ -8,18 +8,18 @@
         table-layout: fixed;
         tr {
             background-color: white;
-            border: 1px solid #ddd;
-            padding: .35em;
+            border: $base-border-thickness solid #ddd;
+            padding: .35rem;
           }
           th,
        td {
-        padding: .625em;
+        padding: .625rem;
         text-align: center;
       }
       
        th {
-        font-size: .85em;
-        letter-spacing: .1em;
+        font-size: .85rem;
+        letter-spacing: .1rem;
         text-transform: uppercase;
       }
       }
@@ -32,24 +32,24 @@
          thead {
           border: none;
           clip: rect(0 0 0 0);
-          height: 1px;
-          margin: -1px;
+          height: 0.01rem;
+          margin: -0.01rem;
           overflow: hidden;
           padding: 0;
           position: absolute;
-          width: 1px;
+          width: 0.01rem;
         }
         
          tr {
           border-bottom: 3px solid #ddd;
           display: block;
-          margin-bottom: .625em;
+          margin-bottom: .625rem;
         }
         
          td {
-          border-bottom: 1px solid #ddd;
+          border-bottom: $base-border-thickness solid #ddd;
           display: block;
-          font-size: .8em;
+          font-size: .8rem;
           text-align: right;
         }
         

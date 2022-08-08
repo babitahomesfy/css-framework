@@ -14,13 +14,13 @@
         }
     }
     .card-icon-round{
-            width: 60px;
-            height: 60px;
-            margin: 0px auto;
-            margin-top: -42px;
+            width:3.75rem;
+            height:3.75rem;
+            margin: 0 auto;
+            margin-top: -$section-margin-sm;
             margin-bottom: $base-margin;
             border-radius: 50%;
-            padding: 22px 23px;
+            padding: $base-padding * 1.5;
             background: #fff;
             box-shadow: $base-box-shadow;
     }
@@ -54,6 +54,6 @@
     text-align: center;
     box-shadow: $base-box-shadow;
     hr{
-        margin: 10px 0;
+        margin: $base-margin 0;
     }
 }

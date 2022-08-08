@@ -7,13 +7,13 @@
   right: 0;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top:$section-padding-sm;
   box-shadow: $base-box-shadow ;
   background: $nav-color;
   a {
       text-decoration: none;
-      padding: 20px 0;
-      font-size: 20px;
+      padding: $base-padding 0;
+      font-size: $base-padding;
       display: block;
       border-bottom: $base-border-thickness solid #00000024;
       transition: 0.3s;
@@ -26,10 +26,10 @@
     
      .closebtn {
       position: absolute;
-      top: -10px;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
+      top: -0.5rem;
+      right: 2rem;
+      font-size: $font-size-lg;
+      margin-left: $section-margin-sm;
       border: none;
     }
 }

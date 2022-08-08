@@ -1,0 +1,16 @@
+@mixin floating-btn-base {
+    position: fixed;
+    bottom: $base-margin;
+    right: $base-margin;
+    z-index:99 ;
+    box-shadow: $base-box-shadow;
+    padding: $base-padding;
+}
+
+.floating-btn{
+    @include floating-btn-base();
+}
+.floating-btn-rounded{
+    @include floating-btn-base();
+    border-radius: 50%;
+}

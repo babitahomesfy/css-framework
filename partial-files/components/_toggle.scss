@@ -1,7 +1,7 @@
 @mixin toggle(){
-    font-size:30px;
-    cursor:pointer;
-    display:flex;
+    font-size:$font-size-lg;
+    cursor: pointer;
+    display: flex;
     justify-content: flex-end;
 }
 
