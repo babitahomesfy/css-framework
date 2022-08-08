@@ -8,7 +8,6 @@
 @import '../partial-files/global';
 @import '../partial-files/breakpoints';
 @import '../partial-files/grid';
-@import '../partial-files/media_queries';
 
 // colors
 @import '../partial-files/colors';
@@ -39,3 +38,5 @@
 @import '../partial-files/sections/banner';
 @import '../partial-files/sections/overview';
 @import '../partial-files/sections/cta';
+
+@import '../partial-files/media_queries';

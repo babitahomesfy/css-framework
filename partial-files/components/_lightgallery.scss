@@ -12,9 +12,9 @@
     .close {
         color: white;
         position: absolute;
-        top: 10px;
-        right: 25px;
-        font-size: 35px;
+        top: 1rem;
+        right: 2.5rem;
+        font-size: 3.5rem;
         font-weight: bold;
         opacity: 0.8;
     }
@@ -37,38 +37,38 @@
         .prev {
             position: absolute;
             float: left;
-            left: 20px;
+            left: 2rem;
             top:25%;
             background-color: #fff;
             color: #000;
-            font-size: 20px;
-            padding: 10px;
+            font-size: 2rem;
+            padding: 1rem;
         }
         .next {
             position: absolute;
             float: right;
-            right: 20px;
+            right: 2rem;
             top:25%;
             background-color: #fff;
             color: #000;
-            font-size: 20px;
-            padding: 10px;
+            font-size: 2rem;
+            padding: 1rem;
         }
         .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
         .numbertext {
             color: #ddd;
-            font-size: 12px;
-            padding: 8px 12px;
+            font-size: 1.2rem;
+            padding: 0.8rem 1.2rem;
             position: absolute;
             top: 0;
         }
         .row.slider-bottom {
             background-color: #ddd;
-            padding: 20px;
+            padding: 2rem;
             .demo.active {
-                border: 6px solid #ff5268;
+                border: 0.6rem solid #ff5268;
             }
         }
     }

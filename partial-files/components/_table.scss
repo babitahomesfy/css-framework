@@ -60,6 +60,6 @@
 
 @media (max-width:442px) {
     th,td{
-        padding: math.div($base-padding, 3)!important;
+        padding:$base-padding / 3!important;
     }
 }

@@ -18,6 +18,12 @@ section{
 .mobBlock{
     display: block;
 }
+.bg-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 @media (min-width:768px) {
     .deskBlock{
         display: block;
