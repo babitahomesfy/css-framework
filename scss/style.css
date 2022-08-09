@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html {
-  font-size: rem-calc(10px);
+  font-size: 0.625rem;
 }
 
 * {
@@ -124,30 +124,30 @@ section {
 }
 
 .gap-1 > * {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .gap-1 {
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .gap-2 > * {
-  padding: 20px;
+  padding: 2rem;
 }
 
 .gap-2 {
-  margin-left: -20px;
-  margin-right: -20px;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 .gap-3 > * {
-  padding: 30px;
+  padding: 3rem;
 }
 
 .gap-3 {
-  margin-left: -30px;
-  margin-right: -30px;
+  margin-left: -3rem;
+  margin-right: -3rem;
 }
 
 .justify-flex-start {
@@ -6986,7 +6986,7 @@ section {
     margin-bottom: 9rem;
   }
   .banner-section .banner-form-part {
-    max-width: 320px;
+    max-width: 20rem;
     position: absolute;
     top: 10%;
     right: 3%;
