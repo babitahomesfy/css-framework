@@ -3,9 +3,9 @@
 $grid-columns: 12;
 $grid-gaps: (
   "0": 0,
-  "1": 10px,
-  "2": 20px,
-  "3": 30px,
+  "1": 1rem,
+  "2": 2rem,
+  "3": 3rem,
 );
 $layout-values: flex-start, flex-end, center, space-between, space-around;
 
