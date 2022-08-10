@@ -1,5 +1,6 @@
 @use 'sass:math';
 @mixin card-base{
+    position: relative;
     display: block;
     padding: $base-padding;
     border-radius: $base-border-radius;
@@ -17,7 +18,7 @@
             width:3.75rem;
             height:3.75rem;
             margin: 0 auto;
-            margin-top: -$section-margin-sm;
+            margin-top: -$section-margin-sm * 0.3;
             margin-bottom: $base-margin;
             border-radius: 50%;
             padding: $base-padding * 1.5;

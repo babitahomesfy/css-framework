@@ -1,0 +1,59 @@
+/* use class="blink" */
+@-webkit-keyframes blinker {
+    from {opacity: 1.0;}
+    to {opacity: 0.2;}
+  }
+  .blink{
+      text-decoration: blink;
+      -webkit-animation: blinker 1s infinite ease-in-out alternate ;
+  }
+
+/* use class="color-change" */
+@-webkit-keyframes color-change {
+    0% {color: black;}
+    25% {color: red;}
+    50% {color: yellow;}
+    75% {color: blue;}
+    100% {color: green;}
+  }
+  .color-change{
+      text-decoration: blink;
+      -webkit-animation: color-change 3s infinite ease-in-out alternate;
+  }
+
+  /* use class="bg-change" */
+@-webkit-keyframes bg-change {
+    0% {background-color: black;}
+    25% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: blue;}
+    100% {background-color: green;}
+  }
+  .bg-change{
+      text-decoration: blink;
+      width: fit-content;
+      -webkit-animation: bg-change 3s infinite ease-in-out alternate;
+  }
+
+    /* use class="zoom-in" */
+@-webkit-keyframes zoom {
+    0% {font-size: $base-font-size;}
+    100% {font-size: $base-font-size * 1.2;}
+  }
+  .zoom{
+      text-decoration: blink;
+      -webkit-animation: zoom 2s infinite ease-in-out alternate;
+  }
+
+      /* use class="elastic" */
+@-webkit-keyframes elastic {
+    0% {font-size: $base-font-size;}
+    50% {font-size: $base-font-size * 1.2;}
+    100% {font-size: $base-font-size;}
+  }
+  .elastic{
+      text-decoration: blink;
+      -webkit-animation: elastic 3s infinite ease-in-out alternate;
+  }
+
+
