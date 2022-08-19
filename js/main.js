@@ -1,3 +1,4 @@
+
 // country code js start
 // $("select").html(`
 //     <option disabled="disabled" value="">Country Code</option>
@@ -328,15 +329,19 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
 
 // modal start
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+var modal = document.getElementById("cta-modal");
+var btn = document.querySelectorAll('[open-modal="open-modal"]');
+var close = document.querySelector('[close-modal="close-modal"]');
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+Array.from(btn).forEach(e => {
+  debugger
+  e.addEventListener('click', () => {
+    modal.style.display = "block";
 
-span.onclick = function() {
+  });
+});
+
+close.onclick = function() {
   modal.style.display = "none";
 }
 window.onclick = function(event) {
@@ -365,29 +370,7 @@ function openCity(evt, cityName) {
 //tab end
 
 
-// lighgallery
 
-function openModal() {
-  document.getElementById("gallery-modal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("gallery-modal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
   var i;
@@ -406,19 +389,29 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-function showSlides1(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+
+// popup
+var popup=document.getElementById("popup-modal");
+var closePopup = document.querySelector('[close-popup="close-popup"]');
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  const showPopup=()=>{
+    popup.style.display="block"
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  setTimeout(showPopup, 3000);
+});
+closePopup.onclick = function() {
+  popup.style.display = "none";
+}
+
+// price section
+var priceSec=document.getElementsByClassName('price-item-card');
+for (var i = 0; i < priceSec.length; i++) {
+  priceSec[i].addEventListener("mouseenter", function() {
+  var current = document.getElementsByClassName("active-price-card");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active-price-card", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
+  this.className += " active-price-card";
+  });
 }
