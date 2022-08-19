@@ -2,6 +2,7 @@
 
 @mixin table{
     width: 100%;
+    font-size: $font-size-lg;
     padding: $base-padding;
     th,td{
         padding: $base-padding;

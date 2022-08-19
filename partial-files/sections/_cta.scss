@@ -1,19 +1,21 @@
-// .cta-video-section{
-//     .cta-content{
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//     }
-// }
-// .cta-section{
-//     img{
-//         margin-right: $base-margin * 2;
-//     }
-//     .cta-content{
-//         display: flex;
-//         align-items: center;
-//         p{
-//             margin-bottom: $base-margin;
-//         }
-//     }
-// }
+.cta-video-section{
+    .cta-content{
+        font-size: $font-size-lg;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+    }
+}
+.cta-section{
+    img{
+        margin-right: $base-margin * 2;
+    }
+    .cta-content{
+        // display: flex;
+        // align-items: center;
+        // p{
+        //     margin-bottom: $base-margin;
+        // }
+        font-size: $font-size-lg;
+    }
+}

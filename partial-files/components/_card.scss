@@ -31,7 +31,7 @@
         font-weight: bold;
     }
     .card-body{
-        font-size: $base-font-size;
+        font-size: $font-size-lg;
         a{
             text-decoration: underline;
         }
@@ -47,6 +47,9 @@
     box-shadow: $base-box-shadow;
     .card-title{
         margin-bottom: $base-margin;
+    }
+    .card-content{
+        font-size: $font-size-lg;
     }
 }
 

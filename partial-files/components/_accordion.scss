@@ -8,7 +8,7 @@
       border: none;
       text-align: left;
       outline: none;
-      font-size: $base-font-size;
+      font-size: $font-size-lg;
       transition: 0.4s;
       margin: 0;
       border-radius: $base-border-radius;
@@ -26,10 +26,11 @@
       background-color: #eee;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+      font-size: $font-size-lg;
     }
     .accordion:after {
       content: '\02795'; /* Unicode character for "plus" sign (+) */
-      font-size: $base-font-size;
+      font-size: $font-size-lg;
       color: #777;
       float: right;
       margin-left: $base-margin * 0.5;

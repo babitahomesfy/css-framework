@@ -15,10 +15,11 @@
        td {
         padding: .625rem;
         text-align: center;
+        font-size: $font-size-lg;
       }
       
        th {
-        font-size: .85rem;
+        font-size: $font-size-lg;
         letter-spacing: .1rem;
         text-transform: uppercase;
       }
@@ -49,7 +50,7 @@
          td {
           border-bottom: $base-border-thickness solid #ddd;
           display: block;
-          font-size: .8rem;
+          font-size: $font-size-lg;
           text-align: right;
         }
         

@@ -6,13 +6,16 @@
 .simple-navbar{
     @include navbar-base();
     .nav-logo{
-        width: 6rem;
+        width: 12rem;
     }
     .navbar-content{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: $base-padding ;
+        .nav-links{
+            font-size: $font-size-lg;
+        }
     }
 }
 

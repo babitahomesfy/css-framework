@@ -5,7 +5,10 @@
             width: 100%;
             border-radius: 3px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            background: #ccc
+            background: #ccc;
+            img{
+                border-radius: $base-border-radius;
+            }
         }
         .floorplan-img:hover .btn.overlay{
             opacity: 1;
