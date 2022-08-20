@@ -334,7 +334,6 @@ var btn = document.querySelectorAll('[open-modal="open-modal"]');
 var close = document.querySelector('[close-modal="close-modal"]');
 
 Array.from(btn).forEach(e => {
-  debugger
   e.addEventListener('click', () => {
     modal.style.display = "block";
 
@@ -415,3 +414,5 @@ for (var i = 0; i < priceSec.length; i++) {
   this.className += " active-price-card";
   });
 }
+
+
