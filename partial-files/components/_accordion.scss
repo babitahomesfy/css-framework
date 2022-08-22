@@ -1,60 +1,108 @@
 @mixin accordion-base {
-    .accordion {
-      background-color: #fff;
-      color: #000;
-      cursor: pointer;
-      padding: $base-padding * 1.5;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: $font-size-lg;
-      transition: 0.4s;
-      margin: 0;
-      border-radius: $base-border-radius;
-    }
-    
-    .active, .accordion:hover {
-      background-color: #ddd; 
-      color: #000;
-    }
-    
-    .panel {
-      padding: $base-padding * 2;
-      display: none;
-      border-radius: $base-border-radius;
-      background-color: #eee;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      font-size: $font-size-lg;
-    }
-    .accordion:after {
-      content: '\02795'; /* Unicode character for "plus" sign (+) */
-      font-size: $font-size-lg;
-      color: #777;
-      float: right;
-      margin-left: $base-margin * 0.5;
-    }
-    
-    .active:after {
-      content: "\2796"; /* Unicode character for "minus" sign (-) */
-    }
+  .accordion {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: $base-padding * 1.5;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: $font-size-lg;
+    transition: 0.4s;
+    margin: 0;
+    border-radius: $base-border-radius;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+
+  .panel {
+    padding: $base-padding * 2;
+    display: none;
+    border-radius: $base-border-radius;
+    background-color: #eee;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: $font-size-lg;
+  }
+  .accordion:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: $font-size-lg;
+    color: #777;
+    float: right;
+    margin-left: $base-margin * 0.5;
+  }
+
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
 }
 
-.accordion-container-shadow{
+.accordion-container-shadow {
   @include accordion-base();
-  .accordion{
+  .accordion {
     box-shadow: $base-box-shadow;
   }
 }
-  
-.accordion-container-bordered{
+
+.accordion-container-bordered {
   @include accordion-base();
-  .accordion{
+  .accordion {
     border: $base-border-thickness solid #ccc;
   }
-  .panel{
+  .panel {
     border: $base-border-thickness solid #ccc;
   }
 }
-  
+
+// accordian type2
+
+.accordionWrapper {
+  .accordionItem {
+    float: left;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Open-sans", Arial, sans-serif;
+  }
+  .accordionItemHeading {
+    cursor: pointer;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    background: #2980b9;
+    color: #fff;
+    width: 100%;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .close .accordionItemContent {
+    height: 0px;
+    transition: height 1s ease-out;
+    transform: scaleY(0);
+    float: left;
+    display: block;
+  }
+  .open .accordionItemContent {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    display: block;
+    transition: transform 0.4s ease;
+    box-sizing: border-box;
+  }
+
+  .open .accordionItemHeading {
+    margin: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+  }
+}

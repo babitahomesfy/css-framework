@@ -333,8 +333,10 @@ var modal = document.getElementById("cta-modal");
 var btn = document.querySelectorAll('[open-modal="open-modal"]');
 var close = document.querySelector('[close-modal="close-modal"]');
 
+
 Array.from(btn).forEach(e => {
   e.addEventListener('click', () => {
+    console.log(e)
     modal.style.display = "block";
 
   });
@@ -416,3 +418,20 @@ for (var i = 0; i < priceSec.length; i++) {
 }
 
 
+// speed dial
+const openSpeedDial = () => {
+  var x = document.getElementById('speed-dial-item');
+  var speeddial = document.getElementById("speed-dial")
+  var plusIcon = document.getElementById("plus-icon");
+  var closeIcon = document.getElementById("close-icon");
+  if (x.style.display !== "none") {
+    x.style.display = "none";
+    speeddial.classList.remove("open")
+
+  }
+  else {
+    x.style.display = "flex";
+    speeddial.classList.add("open")
+  }
+
+}
