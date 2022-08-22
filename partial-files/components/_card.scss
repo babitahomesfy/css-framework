@@ -3,7 +3,6 @@
     position: relative;
     display: block;
     padding: $base-padding;
-    border-radius: $base-border-radius;
     p,h1,h2,h3,h4,h5,h6{
         margin-bottom: $base-margin;
     }
@@ -40,8 +39,13 @@
     }
 }
 
+.card-plain{
+    @include card-base();
+    border-radius: 0;
+}
 .card{
     @include card-base();
+    border-radius: $base-border-radius;
     border: $base-border-thickness solid #ddd;
     box-shadow: $base-box-shadow;
     .card-title{
