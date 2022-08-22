@@ -36,5 +36,8 @@
             opacity: 0.5;
             transition: 0.3s ease;
         }
+        .nav-link{
+            margin-left: $base-margin;
+        }
     }
 }

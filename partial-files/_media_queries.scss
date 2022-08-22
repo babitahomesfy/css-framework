@@ -13,8 +13,16 @@
         .banner-form-part{
             max-width: 25vw;
             position: absolute;
-            top: 10% ;
-            right: 3% ;
+            top: 0 ;
+            right: 0 ;
+            margin: 4rem;
+        }
+        .banner-offer-part{
+            max-width: 25vw;
+            position: absolute;
+            top: 0 ;
+            left: 0 ;
+            margin: 4rem;
         }
     }
     .modal-content-form-icon{

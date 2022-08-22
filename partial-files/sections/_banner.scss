@@ -13,4 +13,17 @@
             padding: $base-padding;
         }
     }
+
+    .banner-offer-part{
+        border-radius: $base-border-radius;
+        width: 100%;
+        position: static;
+        .banner-offer-title{
+            text-align: center;
+            padding: $base-padding;
+        }
+        .banner-offers{
+            padding: $base-padding;
+        }
+    }
 }

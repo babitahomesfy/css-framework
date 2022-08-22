@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../scss/style.css">
+</head>
+<body>
+    <div class="container pt-2">
+
+        <!-- responsive navbar -->
+
+        <div class="responsive-navbar sticky bg-primary-light-6">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="nav-logo">
+                        <img src="../img/logo/logo.svg" alt="logo">
+                    </div>
+                    <div class="nav-links deskBlock">
+                        <a href="#highlights" class="nav-link text-gray">Highlights</a>
+                        <a href="#price-plan" class="nav-link text-gray">Price Plan</a>
+                        <a href="#floor-plan" class="nav-link text-gray">Floor Plan</a>
+                        <a href="#location" class="nav-link text-gray">Location</a>
+                        <a href=""><button class="nav-link btn-orange">9087654321</button></a>
+                    </div>
+                    <div class="sidebar-container mobBlock">
+                          <div id="overlay"></div>
+                          <div class="sidebar">
+                            <span class="toggle-right-black icon-paragraph-left" onclick="openSideNav()"></span>
+                          <div id="sidenav" class="sidenav sidenav-right-light">
+                            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeSideNav()">&times;</a>
+                            <a href="#highlights" class="nav-link text-white">Highlights</a>
+                            <a href="#price-plan" class="nav-link text-white">Price Plan</a>
+                            <a href="#floor-plan" class="nav-link text-white">Floor Plan</a>
+                            <a href="#location" class="nav-link text-white">Location</a>
+                            <a href=""><button class="nav-link btn-orange">9087654321</button></a>
+                          </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <hr class="m-2">
+        
+        <!-- simple navbar -->
+
+    <div class="simple-navbar bg-primary-light-6">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="nav-logo">
+                    <img src="../img/logo/logo.svg" alt="logo">
+                </div>
+                <div class="nav-links">
+                    <a href=""><button class="btn-orange">9087654321</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="m-2">
+
+    <!-- simple navbar with toggle menu -->
+
+    <div class="responsive-navbar bg-primary-light-6">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="nav-logo">
+                    <img src="../img/logo/logo.svg" alt="logo">
+                </div>
+                <div class="sidebar-container">
+                      <div id="overlay"></div>
+                      <div class="sidebar">
+                        <span class="toggle-right-black icon-paragraph-left" onclick="openSideNav()"></span>
+                      <div id="sidenav" class="sidenav sidenav-right-light">
+                        <a href="javascript:void(0)" class="nav-links closebtn text-white" onclick="closeSideNav()">&times;</a>
+                        <a href="#highlights" class="nav-links text-white">Highlights</a>
+                        <a href="#price-plan" class="nav-links text-white">Price Plan</a>
+                        <a href="#floor-plan" class="nav-links text-white">Floor Plan</a>
+                        <a href="#location" class="nav-links text-white">Location</a>
+                        <a href=""><button class="nav-links btn-orange">9087654321</button></a>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr class="m-2">
+
+    <hr class="m-2">
+
+</div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
