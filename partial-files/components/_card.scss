@@ -42,11 +42,11 @@
 .card-plain{
     @include card-base();
     border-radius: 0;
+    border: $base-border-thickness solid #ddd;
 }
 .card{
     @include card-base();
     border-radius: $base-border-radius;
-    border: $base-border-thickness solid #ddd;
     box-shadow: $base-box-shadow;
     .card-title{
         margin-bottom: $base-margin;
