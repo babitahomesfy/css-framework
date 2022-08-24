@@ -352,7 +352,7 @@ Array.from(btn).forEach(e => {
   e.addEventListener('click', () => {
     let formAttrValue = e.getAttribute('open-modal');
     console.log(formTitle)
-    document.getElementById("form-title").innerHTML=formTitleObj[formAttrValue]
+    document.getElementById("form-title").innerHTML=formTitleObj[formAttrValue] ? formTitleObj[formAttrValue] :"Our sales expert will call you shortly"
     modal.style.display = "block";
   });
 });
