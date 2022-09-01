@@ -24,10 +24,8 @@
 @import '../partial-files/components/accordion';
 @import '../partial-files/components/carousel';
 @import '../partial-files/components/modal';
-@import '../partial-files/components/tabs';
 @import '../partial-files/components/table';
 @import '../partial-files/components/responsive_table';
-@import '../partial-files/components/auto_slider';
 @import '../partial-files/components/floating_btn';
 @import '../partial-files/components/text_animations';
 @import '../partial-files/components/clip_path';
@@ -53,6 +51,7 @@
 // section variation start
 @import '../partial-files/section-variation/priceplan';
 @import '../partial-files/section-variation/amenities_var';
+@import '../partial-files/section-variation/tabs';
 
 
 @import '../partial-files/media_queries';

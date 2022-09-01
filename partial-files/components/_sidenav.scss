@@ -13,7 +13,6 @@
   a {
       text-decoration: none;
       padding: $base-padding 0;
-      font-size: $base-padding;
       display: block;
       border-bottom: $base-border-thickness solid #00000024;
       transition: 0.3s;
@@ -26,9 +25,8 @@
     
      .closebtn {
       position: absolute;
-      top: -0.5rem;
-      right: 2rem;
-      font-size: $font-size-lg;
+      top: 1.5rem;
+      right: 3rem;
       margin-left: $section-margin-sm;
       border: none;
     }

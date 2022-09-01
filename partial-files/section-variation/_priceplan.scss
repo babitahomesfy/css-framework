@@ -16,7 +16,6 @@
     .price-card-body {
         padding: 1rem;
         .price-card-title {
-            font-size: $font-size-lg;
             font-weight: bold;
         }
         button {
@@ -25,7 +24,6 @@
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            font-size: 1rem;
         }
         .card-list-item {
             display: flex;

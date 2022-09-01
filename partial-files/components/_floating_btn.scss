@@ -1,10 +1,11 @@
 @mixin floating-btn-base {
     position: fixed;
-    bottom: $base-margin;
+    bottom: $base-margin * 3;
     right: $base-margin;
     z-index:99 ;
-    box-shadow: $base-box-shadow;
-    padding: $base-padding;
+    width: 5rem;
+    height: 5rem;
+    padding:1.5rem;
 }
 
 .floating-btn{
