@@ -1,4 +1,4 @@
-$carousel-height: 25rem;
+$carousel-height: 32rem;
 $control-size: 5rem;
 
 .carousel {
@@ -16,7 +16,7 @@ $control-size: 5rem;
     left: 0;
     justify-content: space-between;
     width: 100%;
-    z-index: 99999;
+    z-index: 99;
     transition: all ease 0.5s;
     
     .control {

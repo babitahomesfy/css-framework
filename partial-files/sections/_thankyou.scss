@@ -1,0 +1,30 @@
+.thankyou-section{
+    background-image: url('img/banner/banner1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .thankyou-banner-section{
+        position: relative;
+        .thankyou-part{
+            position: absolute;
+            top: 20%;
+            left: 0%;
+            right: 0%;
+            margin-top: 4rem;
+            padding: $base-padding;
+            border-radius: $base-border-radius;
+            .thankyou-title{
+                padding: $base-padding;
+                border-radius: $base-border-radius $base-border-radius 0 0;
+            }
+            .thankyou-content{
+                background-color: rgba($color: black, $alpha: 0.5);
+                padding: $section-padding-xs 0;
+                .thankyou-social-links{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,21 +1,25 @@
-.cta-video-section{
-    .cta-content{
-        font-size: $font-size-lg;
-        // display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-    }
-}
-.cta-section{
+// cta type 1 start
+.cta-type1{
     img{
-        margin-right: $base-margin * 2;
-    }
-    .cta-content{
-        // display: flex;
-        // align-items: center;
-        // p{
-        //     margin-bottom: $base-margin;
-        // }
-        font-size: $font-size-lg;
+        width: 25rem;
+        margin-top: -23rem;
+
     }
 }
+//cta type 1 end
+
+//cta type 2 start
+.cta-section-2{
+    img{
+        margin-top: -21rem;
+    }
+}
+// cta type 2 end
+
+//cta type 2 start
+.cta-section-3{
+   .cta-content{
+    background-color: rgba(0,0,0,0.8);
+   }
+}
+// cta type 2 end

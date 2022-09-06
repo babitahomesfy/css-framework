@@ -1,6 +1,6 @@
 .banner-section{
-    position: relative;
     margin-bottom: $section-margin-xs;
+    position: relative;
     img{
         width: 100%;
     }
@@ -9,7 +9,9 @@
         width: 100%;
         position: static;
         .banner-form-title{
-            text-align: center;
+            padding: $base-padding;
+        }
+        .banner-form-offers{
             padding: $base-padding;
         }
     }

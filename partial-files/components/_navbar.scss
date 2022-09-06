@@ -1,22 +1,23 @@
 @mixin navbar-base {
     box-shadow: $base-box-shadow;
     z-index: 999;
-}
-
-.simple-navbar{
-    @include navbar-base();
-    .nav-logo{
-        width: 12rem;
-    }
     .navbar-content{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: $base-padding ;
-        .nav-links{
-            font-size: $font-size-lg;
+        .nav-logo{
+            width: 12rem;
         }
     }
+    .navbar-content-centered{
+        @extend .navbar-content;
+        justify-content: center;
+    }
+}
+
+.simple-navbar{
+    @include navbar-base();
 }
 
 .simple-navbar-fixed{

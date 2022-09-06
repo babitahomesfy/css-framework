@@ -1,3 +1,4 @@
+// positions start
 .fixed{
     position: fixed;
     top: 0;
@@ -8,22 +9,43 @@
     top: 0;
     left: 0;
 }
+// positions end
+
+//text aligns start
 .text-center{
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify{
+    text-align: justify;
+}
+//text aligns end
+
+// section spacings start
 section{
     margin-bottom: $section-margin-xs;
 }
+// section spacings end
 
+// device visibility start
 .deskBlock{
     display: none;
 }
 .mobBlock{
     display: block;
 }
+// device visibility end
+
+// font-weight start
 .font-bold{
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 
 //  text properties
@@ -39,3 +61,21 @@ section{
 .capitalize{
     text-transform: capitalize;
 }
+=======
+.font-300{
+    font-weight: 300;
+}
+.font-300{
+    font-weight: 300;
+}
+.font-400{
+    font-weight: 300;
+}
+.font-500{
+    font-weight: 300;
+}
+.font-600{
+    font-weight: 300;
+}
+// font-weight end
+>>>>>>> f4b62f43f750d891131cceff01b5e16450f08c3f
