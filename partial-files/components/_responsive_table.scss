@@ -1,75 +1,71 @@
-.responsive-table{
+.responsive-table {
+  table {
+    border: $base-border-thickness solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    tr {
+      background-color: white;
+      border: $base-border-thickness solid #ddd;
+      padding: 0.35rem;
+    }
+    th,
+    td {
+      padding: 0.625rem;
+      text-align: center;
+      font-size: $font-size-lg;
+    }
+
+    th {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
     table {
-        border: $base-border-thickness solid #ccc;
-        border-collapse: collapse;
-        margin: 0;
+      border: 0;
+      thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 0.01rem;
+        margin: -0.01rem;
+        overflow: hidden;
         padding: 0;
-        width: 100%;
-        table-layout: fixed;
-        tr {
-            background-color: white;
-            border: $base-border-thickness solid #ddd;
-            padding: .35rem;
-          }
-          th,
-       td {
-        padding: .625rem;
+        position: absolute;
+        width: 0.01rem;
+      }
+
+      tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625rem;
+      }
+
+      td {
+        border-bottom: $base-border-thickness solid #ddd;
+        display: block;
+        font-size: $font-size-lg;
         text-align: center;
-        font-size: $font-size-lg;
       }
-      
-       th {
-        font-size: $font-size-lg;
-        letter-spacing: .1rem;
-        text-transform: uppercase;
-      }
-      }
-      
-       
-      
-      @media screen and (max-width: 600px) {
-        table {
-          border: 0;
-         thead {
-          border: none;
-          clip: rect(0 0 0 0);
-          height: 0.01rem;
-          margin: -0.01rem;
-          overflow: hidden;
-          padding: 0;
-          position: absolute;
-          width: 0.01rem;
-        }
-        
-         tr {
-          border-bottom: 3px solid #ddd;
-          display: block;
-          margin-bottom: .625rem;
-        }
-        
-         td {
-          border-bottom: $base-border-thickness solid #ddd;
-          display: block;
-          font-size: $font-size-lg;
-          text-align: center;
-        }
-        
-         td::before {
-          /*
+
+      td::before {
+        /*
           * aria-label has no advantage, it won't be read inside a table
           content: attr(aria-label);
           */
-          content: attr(data-label);
-          float: left;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
-        
-        td:last-child {
-          border-bottom: 0;
-        }
-    }
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
       }
-      
-      
+
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
 }
