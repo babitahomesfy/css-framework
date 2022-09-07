@@ -1,6 +1,6 @@
 @mixin navbar-base {
     box-shadow: $base-box-shadow;
-    z-index: 999;
+    z-index: 9;
     .navbar-content{
         display: flex;
         justify-content: space-between;
