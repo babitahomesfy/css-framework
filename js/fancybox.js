@@ -15,7 +15,7 @@ const rightArrow = lightboxPopup.querySelector('.arrow--right');
 
 const zoomOutOption = optionHeader.querySelector('.zoom-out');
 const zoomInOption = optionHeader.querySelector('.zoom-in');
-const galleryCloseOption=optionHeader.querySelector('.close')
+const closeBtn = document.querySelector('.close-fancybox');
 
 var active = lightbox.querySelector('.gallery-lightbox__box.active');
 var galleryDirection, index;
@@ -88,6 +88,10 @@ optionLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
         e.preventDefault()
     })
+})
+
+closeBtn.addEventListener('click', function(){
+    lightboxPopup.classList.remove("active");
 })
 
 // zooming effect 

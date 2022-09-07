@@ -38,6 +38,7 @@
 	.tab-content {
 		float: left;
 		width: 100%;
+		border: 0.01rem solid #ddd;
 
 		> .tab-pane {
 			display: none;
@@ -45,7 +46,6 @@
 			&.active {
 				display: block;
 				padding: 2rem;
-				background-color: #efefef;
 			}
 		}
 

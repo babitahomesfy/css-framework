@@ -370,7 +370,7 @@
                 <a href="" class="option-link zoom-out"><i class="ri-zoom-out-line"></i></a>
                 <a href="" class="option-link zoom-in"><i class="ri-zoom-in-line"></i></a>
                 <a href="" class="download" download><i class="ri-download-2-line"></i></a>
-                <a href="" class="option-link close"><i class="icon-cancel"></i></a>
+                <a href="" class="option-link close-fancybox"><i class="icon-cancel"></i></a>
 
 
             </div>
@@ -492,7 +492,7 @@
                         <div class="container">
                             <div class="navbar-content">
                                 <div class="nav-logo">
-                                    <img src="../img/logo/logo.svg" alt="logo">
+                                    <img src="img/logo/logo.svg" alt="logo">
                                 </div>
                                 <div class="nav-links deskBlock">
                                     <a href="#highlights" class="font-lg nav-link text-gray">Highlights</a>
@@ -532,7 +532,7 @@
                         <div class="container">
                             <div class="navbar-content">
                                 <div class="nav-logo">
-                                    <img src="../img/logo/logo.svg" alt="logo">
+                                    <img src="img/logo/logo.svg" alt="logo">
                                 </div>
                                 <div class="nav-links">
                                     <a href=""><button class="btn-primary text-white">9087654321</button></a>
@@ -550,7 +550,7 @@
                         <div class="container">
                             <div class="navbar-content">
                                 <div class="nav-logo">
-                                    <img src="../img/logo/logo.svg" alt="logo">
+                                    <img src="img/logo/logo.svg" alt="logo">
                                 </div>
                                 <div class="sidebar-container">
                                     <div id="overlay"></div>
@@ -582,7 +582,7 @@
                         <div class="container">
                             <div class="navbar-content-centered">
                                 <div class="nav-logo">
-                                    <img src="../img/logo/logo.svg" alt="logo">
+                                    <img src="img/logo/logo.svg" alt="logo">
                                 </div>
                             </div>
                         </div>
@@ -605,8 +605,8 @@
                     <div class="banner-section">
                         <!-- banner image -->
                         <div class="banner-img">
-                            <img src="../img/banner/deskBanner.webp" class="deskBlock" alt="">
-                            <img src="../img/banner/mobBanner.webp" class="mobBlock" alt="">
+                            <img src="img/banner/deskBanner.webp" class="deskBlock" alt="">
+                            <img src="img/banner/mobBanner.webp" class="mobBlock" alt="">
                         </div>
 
                         <div class="banner-form-part bg-white">
@@ -640,8 +640,8 @@
                     <div class="banner-section">
                         <!-- banner image -->
                         <div class="banner-img">
-                            <img src="../img/banner/deskBanner.webp" class="deskBlock" alt="">
-                            <img src="../img/banner/mobBanner.webp" class="mobBlock" alt="">
+                            <img src="img/banner/deskBanner.webp" class="deskBlock" alt="">
+                            <img src="img/banner/mobBanner.webp" class="mobBlock" alt="">
                         </div>
 
                         <div class="banner-form-part bg-white">
@@ -691,8 +691,8 @@
                         <div class="thankyou-banner-section">
                             <!-- banner image -->
                             <div class="banner-img">
-                                <img src="../img/banner/deskBanner.webp" class="deskBlock" alt="">
-                                <img src="../img/banner/mobBanner.webp" class="mobBlock" alt="">
+                                <img src="img/banner/deskBanner.webp" class="deskBlock" alt="">
+                                <img src="img/banner/mobBanner.webp" class="mobBlock" alt="">
                             </div>
 
                             <div class="thankyou-part">
@@ -983,6 +983,11 @@
         });
     }
 
+    window.addEventListener('click', function () {
+        var copiedText = window.event.target;
+        console.log(copiedText);
+        alert(copiedText);
+    })
 
 </script>
 <script src="js/fancybox.js"></script>
