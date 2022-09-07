@@ -15,6 +15,8 @@ const rightArrow = lightboxPopup.querySelector('.arrow--right');
 
 const zoomOutOption = optionHeader.querySelector('.zoom-out');
 const zoomInOption = optionHeader.querySelector('.zoom-in');
+const galleryCloseOption=optionHeader.querySelector('.close')
+
 var active = lightbox.querySelector('.gallery-lightbox__box.active');
 var galleryDirection, index;
 let zoomLevel = 1;

@@ -45,7 +45,6 @@ section{
 .font-bold{
     font-weight: bold;
 }
-<<<<<<< HEAD
 
 
 //  text properties
@@ -61,7 +60,6 @@ section{
 .capitalize{
     text-transform: capitalize;
 }
-=======
 .font-300{
     font-weight: 300;
 }
@@ -78,4 +76,12 @@ section{
     font-weight: 300;
 }
 // font-weight end
->>>>>>> f4b62f43f750d891131cceff01b5e16450f08c3f
+
+.table-boder{
+    border: 1px solid #ccc;
+    padding: 2rem 2rem;
+    i{
+        display: flex;
+        justify-content: end;
+    }
+}
