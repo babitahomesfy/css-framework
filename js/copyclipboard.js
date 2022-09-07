@@ -1,6 +1,7 @@
 
 
 var tooltip = document.querySelectorAll('[data-clipboard-tooltip="clipboard-tooltip"]');
+console.log(tooltip);
 Array.from(tooltip).forEach(items=>{
     items.addEventListener("click",async function(e){
       const parent=e.target.parentElement;

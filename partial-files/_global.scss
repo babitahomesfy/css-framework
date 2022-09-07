@@ -45,6 +45,21 @@ section{
 .font-bold{
     font-weight: bold;
 }
+
+
+//  text properties
+
+
+.uppercase
+{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
 .font-300{
     font-weight: 300;
 }
