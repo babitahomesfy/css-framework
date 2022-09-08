@@ -5,7 +5,7 @@ console.log(tooltip);
 Array.from(tooltip).forEach(items=>{
     items.addEventListener("click",async function(e){
       const parent=e.target.parentElement;
-      const child=parent.querySelector(':scope > .table-main-parent')
+      const child=parent.querySelector(':scope > .copy-main-parent')
       if (!navigator.clipboard) {
                 return;
             }
