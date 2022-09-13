@@ -1,0 +1,47 @@
+.amenities-type-1{
+.amenities-section{
+    background: $bg-theme;
+    .amenities-icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 2s;
+        .amenities-separator{
+            .vertical-dotted{
+                height: 2.5rem;
+                border-left: 0.1rem dotted white;
+                margin-left: 1.2rem;
+            }
+            .horizontal-line{
+                border-bottom: 0.2rem solid white;
+                width: 2.4rem;
+            }
+        }
+        p{
+            text-transform: uppercase;
+        }
+    }
+    .amenities-icon:hover{
+        span{
+            color: $text-theme;
+            border: 0.1px solid $text-theme;
+        }
+        .amenities-separator{
+            .vertical-dotted{
+                height: 2.5rem;
+                border-left: 0.1rem dotted $text-theme;
+                margin-left: 1.2rem;
+            }
+            .horizontal-line{
+                border-bottom: 0.2rem solid $text-theme;
+                width: 2.4rem;
+            }
+        }
+        p{
+            color: $text-theme;
+        }
+    }
+    
+}
+}

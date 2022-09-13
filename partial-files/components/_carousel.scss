@@ -4,7 +4,6 @@ $control-size: 5rem;
 .carousel {
   width:100%;
   height: $carousel-height;
-  border-radius: $base-border-radius;
   overflow: hidden;
   position: relative;
   
@@ -16,7 +15,7 @@ $control-size: 5rem;
     left: 0;
     justify-content: space-between;
     width: 100%;
-    z-index: 99;
+    z-index: 9;
     transition: all ease 0.5s;
     
     .control {
@@ -46,7 +45,7 @@ $control-size: 5rem;
       display: flex;
       width: 100%;
       transition: 1s ease-in-out all;
-      
+      z-index: -9;
       .slide {
         min-width: 100%;
         min-height: $carousel-height;

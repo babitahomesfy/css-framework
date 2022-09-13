@@ -1,0 +1,24 @@
+.location-type-1{
+    .location-section{
+        img{
+            width: 2.5rem;
+        }
+        .tab-container{
+             
+            .nav-tabs{
+                li.active {
+                    a{
+                        background-color: white;
+                    }
+                }
+            }
+            .tab-content{
+                        span{
+                            color: $text-theme;
+                            font-size: 2rem;
+                        }
+                    }
+        }
+    }
+    
+}

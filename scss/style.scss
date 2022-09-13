@@ -35,7 +35,7 @@
 //utilities(margin, padding,opacity)
 @import '../partial-files/spacing';
 
-
+ 
 // sections start
 @import '../partial-files/components/heading';
 @import '../partial-files/sections/banner';
@@ -53,6 +53,23 @@
 @import '../partial-files/section-variation/priceplan';
 @import '../partial-files/section-variation/amenities_var';
 @import '../partial-files/section-variation/tabs';
+@import '../partial-files/section-variation/floor-var';
 
+
+//templates start
+@import '../partial-files/templates/1.4to2.5Cr/theme1';
+@import '../partial-files/templates/1.4to2.5Cr/theme-title';
+@import '../partial-files/templates/1.4to2.5Cr/theme-navbar';
+@import '../partial-files/templates/1.4to2.5Cr/theme-banner';
+@import '../partial-files/templates/1.4to2.5Cr/theme_overview';
+@import '../partial-files/templates/1.4to2.5Cr/theme-highlights';
+@import '../partial-files/templates/1.4to2.5Cr/theme-cta';
+@import '../partial-files/templates/1.4to2.5Cr/theme-amenities';
+@import '../partial-files/templates/1.4to2.5Cr/theme-floor';
+@import '../partial-files/templates/1.4to2.5Cr/theme-location';
+@import '../partial-files/templates/1.4to2.5Cr/theme-price';
+@import '../partial-files/templates/1.4to2.5Cr/theme-footer';
 
 @import '../partial-files/media_queries';
+
+
