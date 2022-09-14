@@ -1,0 +1,17 @@
+// navbar type 1
+.navbar-type-1{
+    .toggle-group{
+        display: flex;
+        .ivr-group{
+            display: flex;
+        }
+        p{
+            color: $text-theme;
+        }
+        .menu-toggle{
+            small{
+                color: $text-theme;  
+            }
+        }
+    }
+}

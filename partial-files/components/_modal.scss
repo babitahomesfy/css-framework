@@ -14,11 +14,9 @@
   /* Modal Content */
   .modal-content {
     position: relative;
-    background-color: #fefefe;
     margin: auto;
     border: $base-border-thickness solid #888;
     width: fit-content;
-    border-radius: $base-border-radius;
     max-width: 44rem;
      /* The Close Button */
     .close {
@@ -29,7 +27,6 @@
       position: absolute;
       top: 0;
       right: 0;
-      border-radius: 0 $base-border-radius 0 0;
       padding: 0 $base-padding;
       background: red;
     }
