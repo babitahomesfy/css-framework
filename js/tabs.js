@@ -38,5 +38,4 @@ class VideoCard extends HTMLElement {
 		`
 	}
 }
-console.log(VideoCard);
 customElements.define("video-card",VideoCard);
