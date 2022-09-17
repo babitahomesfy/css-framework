@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40 to 80 L</title>
+    <link rel="stylesheet" href="../scss/style.css">
+</head>
+<body>
+    
+    <div class="container">
+     <!-- navbar section start -->
+     <h3 class="font-xl text-center text-primary mt-3 mb-1">NAVBAR TYPES</h3>
+     <!-- navbar type 1   -->
+     <div class="temp1-navbar-type-1">
+     <div class="responsive-navbar sticky bg-white">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="nav-logo">
+                    <img src="../img/logo/logo.svg" alt="logo">
+                </div>
+                <div class="nav-links deskBlock">
+                    <a href="#highlights" class="font-lg nav-link text-gray">Highlights</a>
+                    <a href="#amenities" class="font-lg nav-link text-gray">Amenities</a>
+                    <a href="#price-plan" class="font-lg nav-link text-gray">Price Plan</a>
+                    <a href="#floor-plan" class="font-lg nav-link text-gray">Floor Plan</a>
+                    <a href="#location" class="font-lg nav-link text-gray">Location</a>
+                    <a class="phone_url" href="tel:">
+                        <div class="font-lg nav-link btn phone-color text-white phone-btn-height"><span
+                                class="phone_no">0000000000</span></div>
+                    </a>
+                </div>
+                <div class="sidebar-container mobBlock">
+                    <div id="overlay"></div>
+                    <div class="sidebar">
+                        <span class="toggle-right-black icon-paragraph-left" onclick="openSideNav()"></span>
+                        <div id="sidenav" class="sidenav sidenav-right-light">
+                            <a href="javascript:void(0)" class="font-xxl closebtn text-white"
+                                onclick="closeSideNav()">&times;</a>
+                            <a href="#amenities" class="font-lg nav-link text-gray scroll-link">Amenities</a>
+                            <a href="#highlights" class="font-lg nav-link text-white scroll-link">Highlights</a>
+                            <a href="#price-plan" class="font-lg nav-link text-white scroll-link">Price Plan</a>
+                            <a href="#floor-plan" class="font-lg nav-link text-white scroll-link">Floor Plan</a>
+                            <a href="#location" class="font-lg nav-link  text-white scroll-link">Location</a>
+                            <a class="phone_url" href="tel:">
+                                <div class="font-lg nav-link btn phone-color text-white phone-btn-height"><span
+                                        class="phone_no"></span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- navbar section end -->
+
+    <!-- banner section start -->
+    <h3 class="font-xl text-center text-primary mt-3 mb-1">BANNER TYPES</h3>
+    <!-- banner-type 1 -->
+    <div class="temp1-banner-type-1">
+        <div class="banner-section">
+            <!-- banner image -->
+            <div class="banner-img">
+                <img src="../img/banner/deskBanner.webp" class="deskBlock" alt="">
+                <img src="../img/banner/mobBanner.webp" class="mobBlock" alt="">
+            </div>
+    
+            <div class="banner-form-part mt-2 bg-white">
+                <div class="form-container">
+                    <div class="banner-form-title text-center">
+                        <!-- <h3 class="text-theme mt-2 text-center font-xl">Premium 2, 3 & 4 BHK Residential Apartments</h3> -->
+                        <h4 class="font-xl bottom-border text-center">Exclusive Payment Plan</h4>
+                        <hr class="bg-theme">
+                        <h4 class="font-xl">Get in Touch with Us!</h4>
+                    </div>
+                    <form class="form" id="dropEnquiry">
+                        <!-- <h3 class="form-title">Register here for best offers</h3> -->
+                        <input type="text" id="dropEnquiry_Name" class="form-input" placeholder="Your Name*"
+                            pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;"
+                            onkeypress="return OnlyAlphaValidationWithSpace(event)" required> <br> <br>
+                        <div class="form-phone-group">
+                            <select data-dropdown-options id="dropEnquiry_CountryCode" class="form-input">
+                            </select>
+                            <input type="text" id="dropEnquiry_Number" class="form-input form-input-number"
+                                placeholder="Mobile Number*" pattern="[0-9]{10}$" onpaste="return false;"
+                                oncopy="return false;" onkeypress="return OnlyNumberValidationDash(event)" maxlength="10"
+                                required> <br> <br>
+                        </div>
+                        <br>
+                        <button class="btn bg-theme text-white btn-bg-color">Submit
+                            <span class="btn-triangle-b">
+                                <span class="icon-long-arrow-right font-xl"></span>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="form-highlights text-white bg-theme">
+                    <div class="form-offer bg-theme mb-1">
+                        <div class="offer-price">
+                            <div class="offer-image icon-icons8-rupee-50"></div>
+                            <div class="offer-text">
+                                <small>Price</small>
+                                <p class="font-lg"><b>55 Lac Onwards</b></p>
+                            </div>
+                        </div>
+                        <div class="offer-typology">
+                            <div class="offer-image icon-home4"></div>
+                            <div class="offer-text">
+                                <small>Type</small>
+                                <p class="font-lg"><b>Studio</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-offer-text p-1 text-center">
+                        <span class="font-lg p-1">Premium 2, 3 & 4 BHK Residential Apartments</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="banner-offer-part text-white bg-theme bg-white text-center " style="margin-top: 2rem;">
+                <div class="offer-banner ">
+                    <div class="offer-head-text p-2 text-center">
+                        <h2 class="font-xl text-white">The Reserve- Lodha Belmondo</h2>
+                        <p class="text-black"><b>Carpet Area</b></p>
+                    </div>
+                    <div class="offer-center text-center">
+                        <div class="icon-pie-chart font-xxl mb-1 offer-img"></div>
+                        <p class="font-lg">386.64 - 845 Sq.Ft</p>
+                    </div>
+                    <div class="offer-btn p-2">
+    
+                        <button class="btn btn-bg-color text-white" data-open-modal="Homemeeting" style="width: 100%;">Get
+                            Offer
+                            <span class="btn-triangle-w text-theme">
+                                <span class="icon-long-arrow-right font-xl"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- <div class="offer-note">
+                        <p class="font-lg p-1">Codename - West One Park 3 & 4 BHK from 2.20 Cr All In</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+</div>
+    <!-- banner section end -->
+
+      <!-- overview section start -->
+      <h3 class="font-xl text-center text-primary mt-3 mb-1">OVERVIEW TYPES</h3>
+    <!-- overview-type 1 -->
+      <div class="temp1-overview-type-1">
+        <section class="overview" id="highlights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-xs-12">
+                        <!-- main-content-start -->
+                        <div class="main-content">
+                            <!-- overview-section -->
+                            <div class="overview-section">
+                                <div class="overview-content">
+                                    <p class="mb-2 text-spacing text-hight font-lg">
+                                        Spacious & seamlessly blend the grace of a bygone era with contemporary style &
+                                        luxury is
+                                        what defines The Reserve- Lodha Belmondo. Living in opulent riverside apartments and
+                                        taking
+                                        advantage of the rarest of luxuries while being surrounded by the lush greenery that
+                                        connects you to mother earth. Lodha Belmondo unveils the creation and connectivity
+                                        that
+                                        offer its residents the autonomy to lead a lifestyle loaded with possibility. In
+                                        Pune, on
+                                        acres of land, The Reserve Belmondo promises luxurious 2, 3 and 4 Bedroom apartments
+                                        near to Mumbai-Pune Expressway.
+                                        A 30-seater private theatre, an organic farm, a world-class 10,000 square foot
+                                        luxury spa, a
+                                        private concierge, The Reserve club, a cricket field, a yoga, a meditation center,
+                                        and
+                                        numerous other amenities are just a few of the many amenities which the Lodha
+                                        Belmondo
+                                        offers. It is the perfect fusion of environmentally responsible and sustainable life
+                                        that
+                                        helps keep us in connection with nature and provides access to everything that
+                                        humankind needs.
+                                        If you're looking for luxurious 2, 3 and 4 BHK residential apartments nearer to
+                                        Pune, Lodha
+                                        Belmondo is what encourages you to achieve your aspirations of having a home that
+                                        nurtures
+                                        your interactions with your family, friends, and loved ones.
+                                    </p>
+                                    <div class="row gap-2">
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-background card-height mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">100 acres luxurious Riverside
+                                                            Residences</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-background card-height mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">90 acres of open lush greenery
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-background card-height mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">Tee-off in style at 45-acre Greg
+                                                            Norman golf
+                                                            course</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-background card-height mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">50,000 sq. Ft Clubhouse</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-height card-background mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">Dedicated indoor 5-senses kids
+                                                            activity
+                                                            center</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-height card-background mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">Greg Norman designed, 45-acre
+                                                            9-hole golf
+                                                            course</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-height card-background mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center">Access to world class amenities like swimming
+                                                            pool, clubhouse, Theatre, sunken gardens and many more.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="amenities-card1 bg-white">
+                                                <div class="card card-flex card-height card-background mb-2">
+                                                    <div class="card-body">
+                                                        <p class="text-center text-spacing">Seamless Connectivity to nearby
+                                                            city
+                                                            markets,
+                                                            schools, hospitals, etc</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--overview-section-end-->
+                        </div>
+                        <!-- main-content-end -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+     <!-- overview section end -->
+
+      <!-- highlights section start -->
+      <h3 class="font-xl text-center text-primary mt-3 mb-1">HIGHLIGHTS TYPES</h3>
+      <!-- highlights-type 1 -->
+      <div class="temp1-highlights-type-1">
+    </div>
+     <!-- highlights section end -->
+
+       <!-- cta section start -->
+       <h3 class="font-xl text-center text-primary mt-3 mb-1">CTA TYPES</h3>
+      <!-- cta-type 1 -->
+       <div class="temp1-cta-type-1">
+        <section class="cta-section text-white">
+            <div class="container">
+                <div class="col-md-9 col-xs-12">
+                    <div class="cta-video-section p-2 bg-theme">
+                        <div class="container">
+                            <div class="cta-content">
+                                <div class="row">
+                                    <div class="col-md-3 col-xs-12" style="margin-top: -100px;">
+                                        <img src="../img/cta/cta.webp" alt="cta-image">
+                                    </div>
+                                    <div class="col-md-9 col-xs-12">
+                                        <h3 class="mt-2 font-xl text-center text-weight">REQUEST OFFICE / HOME / VIDEO
+                                            PRESENTATION BY, <br> Lodha Belmondo</h3>
+                                        <div class="cta-btn">
+                                            <button class="btn text-white btn-bg-color btn-width mt-2"
+                                                data-open-modal="video_call">REQUEST HERE
+                                                <span class="btn-triangle-w text-theme">
+                                                    <span class="icon-long-arrow-right font-xl"></span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+     <!-- cta section end -->
+
+       <!-- amenities section start -->
+       <h3 class="font-xl text-center text-primary mt-3 mb-1">AMENITIES TYPES</h3>
+       <!-- amenities-type 1 -->
+       <div class="temp1-amenities-type-1">
+        <section class="amenities" id="amenities">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-9 col-xs-12">
+                        <div class="overview-section">
+                            <div class="row gap-2">
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-movie1 text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">30-seater private theatre</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-tree1 text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Organic farm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-hot_tub text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">World class 10,000 sq. ft. luxury spa
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-spoon-knife text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Private concierge</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-museum text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">The Reserve club</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2  card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-barbell text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">State-of-the-art gymnasium</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-sports_baseball text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Cricket ground</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-cake text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Elegant party hall and open-air lawn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-museum text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Banqueting staff</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-self_improvement text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Yoga and meditation center</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-soccer-court1 text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Multi-purpose courts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 col-xs-6">
+                                    <div class="amenities-card1 bg-white">
+                                        <div class="card card-background mb-2 card-height">
+                                            <div class="card-img text-center">
+                                                <span class="icon-library text-gray font-xxl"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="text-center text-spacing">Library lounge with business center</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+     <!-- amenities section end -->
+
+      <!-- price section start -->
+      <h3 class="font-xl text-center text-primary mt-3 mb-1">PRICE PLAN TYPES</h3>
+      <!-- price-type 1 -->
+      <div class="temp1-price-type-1">
+        <section class="price-table" id="price-plan">
+            <div class="container">
+                <div class="col-md-9 col-xs-12">
+                    <div class="responsive-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Configuration</th>
+                                    <th>Carpet Area</th>
+                                    <th>Pricing</th>
+                                    <th>Price Sheet</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Studio </td>
+                                    <td>493-497 sqft </td>
+                                    <td>55 - 68 Lacs</td>
+                                    <td> <button class="btn text-white btn-bg-color btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td> 2 BHK (Tower 31) </td>
+                                    <td> 985-1005 sqft </td>
+                                    <td>1.35 - 1.50 CR </td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td>2 BHK Large </td>
+                                    <td> 1262-1299 sqft </td>
+                                    <td>1.37 - 1.53 CR </td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td>3 BHK (The Reserve) </td>
+                                    <td> 1445-1460 sqft</td>
+                                    <td>1.71 - 1.99 CR </td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td>3 BHK Large </td>
+                                    <td>1721-1753 sqft</td>
+                                    <td>2.05 - 2.15 CR </td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td>4 BHK (The Reserve) </td>
+                                    <td>2010-2032 sqft</td>
+                                    <td>2.35 - 2.50 CR </td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                                <tr>
+                                    <td>4 BHK (Tower 21) </td>
+                                    <td>2068-2120 sqft</td>
+                                    <td>2.84 - 3.30 CR</td>
+                                    <td> <button class="btn btn-bg-color text-white btn-width"
+                                            data-open-modal="PriceSection">Request
+                                            <span class="btn-triangle-b">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+     <!-- price section end -->
+
+       <!-- floorplan section start -->
+       <h3 class="font-xl text-center text-primary mt-3 mb-1">FLOOR PLAN TYPES</h3>
+      <!-- floor-type 1 -->
+       <div class="temp1-floor-type-1">
+        <section class="floor-plan" id="floor-plan">
+            <div class="container">
+                <div class="col-md-9 col-xs-12">
+                    <div class="row gap-2">
+                        <div class="col-md-4 col-xs-12">
+                            <div class="price-plan-content mb-2">
+                                <div class="price-card-type1">
+                                    <div class="card-img">
+                                        <img src="../img/floorPlan/floorplan1.webp" alt="floor-plan">
+                                    </div>
+                                    <div class="price-card-body bg-theme text-center">
+                                        <button class="btn btn-bg-color text-white" data-open-modal="FloorPlan">Enquire Now
+                                            <span class="btn-triangle-w text-theme">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 col-xs-12">
+                            <div class="price-plan-content mb-2 ">
+                                <div class="price-card-type1">
+                                    <div class="card-img">
+                                        <img src="../img/floorPlan/floorplan2.webp" alt="floor-plan">
+                                    </div>
+                                    <div class="price-card-body bg-theme text-center">
+                                        <button class="btn btn-bg-color text-white" data-open-modal="FloorPlan">Enquire Now
+                                            <span class="btn-triangle-w text-theme">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4 col-xs-12">
+                            <div class="price-plan-content mb-2 ">
+                                <div class="price-card-type1">
+                                    <div class="card-img">
+                                        <img src="../img/floorPlan/floorplan1.webp" alt="floor-plan">
+                                    </div>
+                                    <div class="price-card-body bg-theme text-center">
+                                        <button class="btn btn-bg-color text-white" data-open-modal="FloorPlan">Enquire Now
+                                            <span class="btn-triangle-w text-theme">
+                                                <span class="icon-long-arrow-right font-xl"></span>
+                                            </span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    <!-- floorplan section end -->
+
+    <!-- gallery section start -->
+    <h3 class="font-xl text-center text-primary mt-3 mb-1">GALLERY TYPES</h3>
+    <!-- gallery-type 1 -->
+    <div class="temp1-gallery-type-1">
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="col-md-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="carousel">
+                                <div class="slides">
+                                    <img src="../img/gallery/g1.webp" alt="slide image" class="slide">
+                                    <img src="../img/gallery/g2.webp" alt="slide image" class="slide">
+                                    <img src="../img/gallery/g3.webp" alt="slide image" class="slide">
+                                    <img src="../img/gallery/g4.webp" alt="slide image" class="slide">
+    
+                                </div>
+                                <div class="controls">
+                                    <div class="control prev-slide">&#9668;</div>
+                                    <div class="control next-slide">&#9658;</div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </section>
+    </div>
+      <!-- gallery section end -->
+
+    <!-- location section start -->
+    <h3 class="font-xl text-center text-primary mt-3 mb-1">LOCATION TYPES</h3>
+    <!-- location-type 1 -->
+    <div class="temp1-loaction-type-1">
+        <section class="location" id="location">
+            <div class="container">
+                <div class="col-md-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 mb-2">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.990499711199!2d73.7082175!3d18.664422299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b085cb8ab6b1%3A0x824827da9b7a9b71!2sLODHA%20Belmondo!5e0!3m2!1sen!2sin!4v1662614496899!5m2!1sen!2sin"
+                                style="border:0; width: 100%; height: 280px;" sandbox="allow-scripts " allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="accordion">
+                                <article class="accordion__item accordion__item-bg open">
+                                    <h3 class="font-lg text-theme text-weight">Facilities</h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span> University- 1.4 Km
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span> Water Park- 4.2 Km
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span> D-Mart- 4.3 Km</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span>MCA Stadium- 1.8 Km
+                                            </p>
+                                        </div>
+    
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span>D Y Patil Cricket
+                                                Ground- 3.9 Km</p>
+                                        </div>
+    
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span>Pawana River- 1 Km</p>
+                                        </div>
+                                    </div>
+    
+                                </article>
+                                <article class="accordion__item accordion__item-bg">
+                                    <h3 class="font-lg text-theme text-weight">Station</h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1"></span> Pune Railway station-
+                                                26.3 km</p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="accordion__item accordion__item-bg">
+                                    <h3 class="font-lg text-theme text-weight">Road</h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1">Mumbai-Pune Expressway</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1">Lonavala- 44 Km</span></p>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1">Mumbai- 100 Km</span></p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="accordion__item accordion__item-bg">
+                                    <h3 class="font-lg text-theme text-weight">Airport</h3>
+                                    <div class="row">
+                                        <div class="col-md-4 col-xs-12">
+                                            <p class="font-lg"><span class="icon-location1">Pune Airport- 30.5 km</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <button class="btn btn-bg-color font-lg btn-width text-white mt-2"
+                                data-open-modal="Location">Get Site
+                                Visit
+                                <span class="btn-triangle-b">
+                                    <span class="icon-long-arrow-right font-xl"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+    <!-- location section end -->
+
+    <!-- footer section start -->
+    <h3 class="font-xl text-center text-primary mt-3 mb-1">FOOTER TYPES</h3>
+    <!-- footer-type 1 -->
+    <div class="temp1-footer-type-1">
+    <div class="footer-section pt-3 pb-3 text-white" id="footer">
+        <div class="container">
+         <div class="footer-content">
+             <div class="row gap-2">
+                 <div class="col-md-12 col-xs-12">
+                    <h3 class="mb-1">Privacy Policy | Terms & Conditions</h3>
+                    <hr>
+                     <p class="mt-1">
+                        Disclaimer : The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. Images for representation purpose only. This is not the official website. Website maintained by our online marketing agency pact partners. We may share data with rera registered brokers/companies for further processing. We may also send updates to the mobile number/email id registered with us. You may unsubscribe anytime by writing to us at unsubscribe@homesfy.in All Rights Reserved.
+                     </p>
+                 </div>
+             </div>
+         </div>
+        </div>
+     </div>
+    </div>
+     <!-- footer section end -->
+
+     <!-- social button section start -->
+     <h3 class="font-xl text-center text-primary mt-3 mb-1">SOCIAL BUTTONS TYPES</h3>
+     <!-- footer-type 1 -->
+     <div class="temp1-social-type-1">
+        <div class="social-section">
+            <div class="call">
+                <a href="" class="font-lg text-white btn-sharp"><span class="icon-phone_in_talk mr-1 font-xl"></span></a>
+            </div>
+            <div class="whatsapp">
+                <a href="" class="font-lg text-white btn-sharp-green"><span class="icon-whatsapp ml-1 font-xl"></span></a>
+            </div>
+        </div>
+     </div>
+
+    <!-- social button section end -->
+
+      <!-- title section start -->
+      <h3 class="font-xl text-center text-primary mt-3 mb-1">TITLES TYPES</h3>
+      <!-- footer-type 1 -->
+      <div class="temp3-title-type-1">
+        <div class="main-title text-left">
+            <div class="main-title-head">
+                <h2 class="text-left text-black font-500">The Reserve- Lodha Belmondo
+                    <span class="text-theme font-lg font-500 capitalize">Location</span>
+                </h2>
+            </div>
+            <h3 class="title-number text-theme">07</h3>
+        </div>
+      </div>
+     <!-- title section end -->
+
+
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/tabs.js"></script>
+    <script src="../js/accordion.js"></script>
+</body>
+</html>

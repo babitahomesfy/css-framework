@@ -1,0 +1,17 @@
+.temp3-social-type-1{
+    .social-section{
+        display: flex;
+        width: 100%;
+        .call{
+            a{
+                background-color: $text-theme;
+                border: 1px solid white;
+            }
+        }
+        .whatsapp{
+            a{
+                border: 1px solid white;
+            }
+        }
+    }
+}

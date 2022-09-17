@@ -1,0 +1,32 @@
+.btn-bg-color{
+    position: relative;
+    border-radius: 0;
+    height: 50px;
+    .btn-triangle-b {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -1px;
+        right: 0px;
+        border-bottom: 51px solid #9e7f1c;
+        border-left: 55px solid transparent;
+    }
+   span{
+    position: absolute;
+    top: 2.4rem;
+    right: 1rem;
+   }
+    .btn-triangle-w {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -1px;
+        right: 0px;
+        border-bottom: 51px solid #fff;
+        border-left: 55px solid transparent;
+    }
+}
+
+.phone-btn-height{
+    height:auto;
+}

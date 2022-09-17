@@ -11,6 +11,10 @@
 .btn{
     @include btn; 
 }
+.btn-sharp{
+    @include btn; 
+    border-radius: 0
+}
 
 @each $key, $val in $colors {
     .btn-#{$key}{

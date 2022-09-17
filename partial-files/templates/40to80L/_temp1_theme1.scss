@@ -1,0 +1,56 @@
+.text-theme {
+    color: #9e7f1c;
+}
+
+.bg-theme {
+    background-color: #9e7f1c;
+}
+
+.btn-bg-color {
+    background-color: #000c;
+}
+
+.text-black {
+    color: #000c;
+}
+
+.phone-color {
+    background-color: #02731e;
+}
+
+.btn-width {
+    width: 100%;
+    max-width: 350px;
+    min-width: 120px;
+    height: 48px;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+.card-height {
+    height: 150px;
+}
+
+.text-hight {
+    line-height: 2.2rem;
+}
+
+.text-weight {
+    font-weight: normal;
+}
+
+.text-spacing {
+    letter-spacing: 0.5px;
+}
+
+.footer-bg {
+    background: #f0f2f3;
+}
+.accordion__item-bg {
+    background: none;
+    border: 1px solid #9e7f1c;
+    border-radius: $base-border-radius;
+    padding: 1.24rem;
+}

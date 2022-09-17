@@ -27,16 +27,3 @@ window.addEventListener("load", function() {
 
 // tabs js end
 
-
-class VideoCard extends HTMLElement {
-    constructor() {
-        super();
-        this.innerHTML = `
-		<video width="100%" height="360px" autoplay muted controls>
-		<source src="https://s3.ap-south-1.amazonaws.com/www.ajmerawadala.in/img/video/WhatsApp+Video+2022-08-29+at+4.23.46+PM.mp4">
-		</video>
-		`
-	}
-}
-console.log(VideoCard);
-customElements.define("video-card",VideoCard);

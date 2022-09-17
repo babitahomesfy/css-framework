@@ -1,0 +1,24 @@
+.temp3-title-type-1{
+    .main-title{
+        position: relative;
+        h2{
+            text-transform: uppercase;
+            background: #fff;
+            z-index: 99;
+        }
+        .title-number{
+            position: absolute;
+            top: 30px;
+            line-height: 90px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: -84px;
+            z-index: -1;
+            left: 0;
+            font-weight: 900;
+            font-size: 56px;
+        }
+    }
+}
+
