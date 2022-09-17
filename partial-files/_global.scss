@@ -84,4 +84,17 @@ section{
         display: flex;
         justify-content: end;
     }
+    .tooltip-before,.tooltip-after{
+        display: none;
+        font-size: 14px;
+        margin-top: 1px;
+        margin-left: 5px;
+    }
+    .copy:hover .tooltip-before {
+    display:block;
+    }
+    .copied:hover .tooltip-after {
+        display:block;
+        }
+    
 }
