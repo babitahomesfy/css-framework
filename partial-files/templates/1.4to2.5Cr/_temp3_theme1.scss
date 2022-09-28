@@ -1,11 +1,10 @@
-
 $text-theme : #A8914B;
-$img-overlay : #F3F3F3;
+$bg-light : #F3F3F3;
 $bg-theme :#061A2E;
 .img-overlay-container{
     position: relative;
     .img-overlay-right{
-        background-color: $img-overlay;
+        background-color: $bg-light;
         width: 90%;
         height: 100%;
         position: absolute;
@@ -14,7 +13,7 @@ $bg-theme :#061A2E;
         right: 2rem;
     }
     .img-overlay-left{
-        background-color: $img-overlay;
+        background-color: $bg-light;
         width: 90%;
         height: 100%;
         position: absolute;

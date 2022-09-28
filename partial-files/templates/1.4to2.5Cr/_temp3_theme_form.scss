@@ -1,0 +1,17 @@
+.temp3-form-type-1{
+    .input-group{
+        border-bottom: 0.01rem solid #ccc;
+        background: rgba(168, 145, 75, 0.15);
+        width: 100%;
+        input,select{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.4rem;
+            color: #999999;
+        }
+        ::placeholder{
+            color: #999999;
+        }
+    }
+}

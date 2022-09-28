@@ -1,4 +1,9 @@
 .temp3-floor-type-1{
+    .floorplan-section{
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), url('../../../img/floorPlan/floor-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .floor-card{
         background: rgba(255, 255, 255, 0.9);
         border: 0.1rem solid #999999;

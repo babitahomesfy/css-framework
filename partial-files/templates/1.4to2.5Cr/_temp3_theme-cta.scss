@@ -4,6 +4,9 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
+        .row{
+            flex-direction: column-reverse;
+        }
         .cta-img-part{
             .cta-img{
                 display: flex;
@@ -31,12 +34,12 @@
     }
 }
 
-@media (max-width:768px){
+@include md {
     .temp3-cta-type-1{
         .cta-content{
             .row{
-                flex-direction: column-reverse;
+                flex-direction: row;
             }
         }
     }
-}
+  }

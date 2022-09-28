@@ -1,0 +1,86 @@
+.temp3-gallery-type-1{
+    @mixin slider-arrow {
+        color: #988265;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.8rem;
+        font-family: "icomoon";
+        position: absolute;
+    
+    }
+    
+    .slider-wrap {
+        overflow: hidden;
+        position: relative;
+        .slider-main {
+            background-color: $bg-light;
+            padding: 2rem;
+            display: inline-flex;
+             gap: 1rem;
+             overflow: hidden;
+             transition: 1s ease all;
+             float: left;
+            .item {
+                width: 60rem;
+                float: left;
+                transition: all 1s;
+            }
+            .item.zero-ele{
+                margin-left: -40rem;
+            }
+            i.icon-arrow-bottom-left{
+                @include slider-arrow ;
+                margin-left: -2.2rem;
+                color: #fff;
+                background-color: $bg-theme;
+                padding: 0.5rem;
+                border: 0.3rem solid white;
+                transform: rotate(45deg);
+            }
+            i.icon-arrow-top-right {
+                @include slider-arrow ;
+                margin-left: -1.1rem;
+                color: #fff;
+                background-color: $text-theme;
+                padding: 0.5rem;
+                border: 0.3rem solid white;
+                transform: rotate(45deg);
+            }
+        }
+    
+        .btn-area {
+            i.icon-arrow-bottom-left {
+                float: left;
+                margin-left: -28.5rem;
+            }
+            i.icon-arrow-top-right {
+                float: right;
+                margin-right: -27rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .temp3-gallery-type-1{
+        .slider-wrap {
+            .slider-main {
+                .item.add{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                .item{
+                    display: none;
+                }
+                i.icon-long-arrow-left{
+                    margin-left: -2rem;
+                }
+                i.icon-long-arrow-right{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}

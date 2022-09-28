@@ -22,6 +22,7 @@
                 <a href="#colors-types" class="font-lg text-white">Colors</a>
                 <a href="#buttons-types" class="font-lg text-white">Buttons</a>
                 <a href="#font-size-types" class="font-lg text-white">Font Sizes</a>
+                <a href="#breakpoint-types" class="font-lg text-white">BreakPoints</a>
                 <a href="#grid-types" class="font-lg text-white">Grid</a>
                 <a href="#price-table-types" class="font-lg text-white">Price Table</a>
                 <a href="#price-card-types" class="font-lg text-white">Price Card</a>
@@ -137,10 +138,134 @@
             <!-- font-sizes end -->
 
             <hr class="mt-4">
+            <h1 class="text-center font-xxl p-2" id="breakpoint-types">Breakpoints</h1>
+            <hr class="mb-4">
+
+              <!-- breakpoints start -->
+              <div class="row gap-2">
+                <div class="col-md-4 col-xs-12">
+                    <div class="breakpoint-guidlines">
+                        <h3 class="font-xl mb-1">Guidlines to use Breakpoints</h3>
+                        <p class="font-lg">
+                            @include xs {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                              <br>
+                              @include sm {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                              <br>
+                              @include md {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                              <br>
+                              @include lg {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                              <br>
+                              @include xl {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                              <br>
+                              @include breakpoint(1400px) {
+                                <br>
+                                    ....
+                                <br>
+                              }
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-8 col-xs-12">
+                    <table border="1" class="table-bordered-white bg-primary-light-8">
+                        <thead>
+                            <tr>
+                                <th>Breakpoint</th>
+                                <th>Class infix</th>
+                                <th>Dimensions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Extra Small</td>
+                                <td>xs</td>
+                                <td> <576px </td>
+                            </tr>
+                            <tr>
+                                <td>Small</td>
+                                <td>sm</td>
+                                <td> ≥576px </td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>md</td>
+                                <td> ≥768px </td>
+                            </tr>
+                            <tr>
+                                <td>Large</td>
+                                <td>lg</td>
+                                <td> ≥992px </td>
+                            </tr>
+                            <tr>
+                                <td>Extra Large</td>
+                                <td>xl</td>
+                                <td> ≥1200px </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- breakpoints end -->
+
+            <hr class="mt-4">
             <h1 class="text-center font-xxl p-2" id="grid-types">Grid</h1>
             <hr class="mb-4">
 
             <!-- grid start -->
+            <div class="container">
+                <div class="row gap-2">
+                    <div class="col-md-4 col-xs-12">
+                        <h3 class="font-xl mb-1">Default Width Container</h3>
+                        <pre class="font-lg p-1" style="margin-left: -24rem;">
+                            &lt;div class="container"&gt;
+                                ...
+                                &lt;/div&gt;
+                        </pre>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3 class="font-xl mb-1">Full Width Container</h3>
+                        <pre class="font-lg p-1" style="margin-left: -24rem;">
+                            &lt;div class="container-fluid"&gt;
+                                ...
+                                &lt;/div&gt;
+                        </pre>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <h3 class="font-xl mb-1">Example :</h3>
+                        <pre class="font-lg p-1" style="margin-left: -24rem;">
+                            &lt;div class="container"&gt;
+                                &lt;div class="row"&gt;
+                                    &lt;div class="col-md-12"&gt;
+                                    &lt;p&gt; content...  &lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mb-2">
+            
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-1 bg-white p-2 text-center" style="border:1px solid gray ;">col-xs-1</div>
@@ -207,6 +332,31 @@
                     <div class="row">
                         <div class="col-xs-12 bg-white p-2 text-center" style="border:1px solid gray ;">col-xs-12</div>
                     </div>
+                </div>
+
+                <hr class="mb-2">
+
+                <div class="container">
+                            <h3 class="font-xl mb-1">Grid Gaps</h3>
+                            <div class="row gap-0">
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-0</div>
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-0</div>
+                            </div>
+                            <hr class="mb-2">
+                            <div class="row gap-1">
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-1</div>
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-1</div>
+                            </div>
+                            <hr class="mb-2">
+                            <div class="row gap-2">
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-2</div>
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-2</div>
+                            </div>
+                            <hr class="mb-2">
+                            <div class="row gap-3">
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-3</div>
+                                <div class="col-md-6 col-xs-6 bg-white p-2 text-center" style="border:1px solid gray ;" >Gap-3</div>
+                            </div>
                 </div>
 
             <!-- grid end -->
@@ -869,7 +1019,7 @@
                                         <img src="img/banner/mobBanner.webp" class="mobBlock" alt="">
                                     </div>
             
-                                    <div class="banner-form-part bg-white">
+                                    <div class="banner-form-part m-3 bg-white">
                                         <div class="banner-form-title">
                                             <h3 class="text-primary mt-2 text-center font-xl">1 & 3 BHK luxurious
                                                 homes in Sobha Sentosa
@@ -913,7 +1063,7 @@
                                         <img src="img/banner/mobBanner.webp" class="mobBlock" alt="">
                                     </div>
             
-                                    <div class="banner-form-part bg-white">
+                                    <div class="banner-form-part m-3 bg-white">
                                         <div class="banner-form-title">
                                             <h3 class="text-primary mt-2 text-center font-xl">1 & 3 BHK luxurious
                                                 homes in Sobha Sentosa
@@ -936,7 +1086,7 @@
                                         </form>
                                     </div>
             
-                                    <div class="banner-offer-part bg-white">
+                                    <div class="banner-offer-part m-3 bg-white">
                                         <div class="banner-offer-title">
                                             <h3 class="text-primary mt-2 text-center font-xl">Sobha Sentosa</h3>
                                         </div>
@@ -1444,14 +1594,7 @@
                 <!-- clip-path end -->
 
         </div>
-
-
-
-
-
-       
-       
-    </div>
+        </div>
 </body>
 <script>
     // price section

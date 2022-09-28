@@ -24,6 +24,5 @@ window.addEventListener("load", function() {
 		myTabs[i].addEventListener("click", myTabClicks)
 	}
 });
-
 // tabs js end
 

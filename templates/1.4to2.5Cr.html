@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="menu-toggle">
                                     <small class="">Menu</small>
-                                    <span class="toggle-right-black icon-align-justify " onclick="openSideNav()"></span>
+                                    <span class="toggle-right-black icon-th-menu" onclick="openSideNav()"></span>
                                 </div>
                             </div>
                             <div id="sidenav" class="sidenav sidenav-right-dark">
@@ -71,22 +71,44 @@
                     Start From <span class="title-bold font-bold font-xxl">1.52</span> <span class="title-light">Cr*</span> 
                     </h3>
             </div>
-            <form  id="dropEnquiry" style="max-width:37rem; margin: 0 auto;" class="form-border-bottom">
-                <h3 class="form-title text-white font-300 text-left">Register here for best offers</h3>
-                <input type="text" id="dropEnquiry_Name" class="form-input" placeholder="Name" pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyAlphaValidationWithSpace(event)" required> <br> <br>
-                <div class="form-phone-group">
-                    <select id="dropEnquiry_CountryCode" class="form-input" data-dropdown-options >
-                    </select>
-                    <input type="text" id="dropEnquiry_Number" class="form-input" placeholder="Mobile Number" pattern="[0-9]{10}$" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyNumberValidationDash(event)" maxlength="10" required> <br> <br>
-                </div>
-                <br>
-                <button class="btn-sharp-outlined-black text-black">Submit</button>
-            </form>
-        
+            <div class="temp3-form-type-1 pb-1">
+                <form  id="dropEnquiry" style="max-width:37rem; margin: 0 auto;" class="form-border-bottom">
+                    <h3 class="form-title text-white font-300 text-left">Register here for best offers</h3>
+                    <div class="input-group p-1 mb-1">
+                        <span class="input-icon icon-user1 font-xl text-white pr-1"></span>
+                        <input type="text" id="dropEnquiry_Name" class="" placeholder="Name" pattern="[a-zA-Z ]{4,35}" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyAlphaValidationWithSpace(event)" required>
+                    </div>
+                    <div class="form-phone-group">
+                        <div class="input-group p-1">
+                            <select id="dropEnquiry_CountryCode" class="text-white" data-dropdown-options >
+                                <option value="">(+91)</option>
+                            </select>
+                            <input type="text" id="dropEnquiry_Number" class="" placeholder="Mobile Number" pattern="[0-9]{10}$" onpaste="return false;" oncopy="return false;" onkeypress="return OnlyNumberValidationDash(event)" maxlength="10" required>
+                        </div>
+                    </div>
+                    <br>
+                    <button class="btn-sharp-outlined-black text-black">Submit <i class="icon-arrow-right2"></i></button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
     <!-- banner section end -->
+
+        <!-- title section start -->
+        <h3 class="font-xl text-center text-primary mt-3 mb-1">TITLES TYPES</h3>
+        <!-- footer-type 1 -->
+        <div class="temp3-title-type-1">
+           <div class="main-title">
+               <div class="main-title-content">
+                   <p class="text-left">Location</p>
+               </div>
+               <div class="main-title-head">
+                   <h2 class="text-left">Vasant Lawns Thane West</h2>
+               </div>
+           </div>
+        </div>
+       <!-- title section end -->
 
       <!-- overview section start -->
       <h3 class="font-xl text-center text-primary mt-3 mb-1">OVERVIEW TYPES</h3>
@@ -205,7 +227,7 @@
        <h3 class="font-xl text-center text-primary mt-3 mb-1">AMENITIES TYPES</h3>
        <!-- amenities-type 1 -->
        <div class="temp3-amenities-type-1">
-       <section class="amenities-section pt-4 pb-3" id="amenities">
+       <section class="amenities-section pt-3 pb-3" id="amenities">
         <div class="container">
          <div class="amenities-content mt-3">
             <div class="row gap-2">
@@ -314,7 +336,7 @@
         <div class="container">
          <div class="price-content">
              <div class="row gap-2">
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <div class="price-plan-content mb-2">
                         <div class="price-card-type1">
                             <div class="card-img">
@@ -339,7 +361,7 @@
                     </div>
                 
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <div class="price-plan-content mb-2">
                         <div class="price-card-type1">
                             <div class="card-img">
@@ -364,7 +386,32 @@
                     </div>
                 
                 </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-3 col-xs-12">
+                    <div class="price-plan-content mb-2">
+                        <div class="price-card-type1">
+                            <div class="card-img">
+                                <img src="../img/gallery/g5.webp" alt="">
+                            </div>
+                            <div class="price-card-body text-center">
+                                <div class="card-list-item mb-2 mt-1">
+                                    <div class="card-item-heading">
+                                        <span><span class="price-card-title icon-home font-xl"></span></span>
+                                        <span>Area Size</span>
+                                        <span>Price</span>
+                                    </div>
+                                    <div class="card-item-content">
+                                        <span class="price-card-title">4 BHK</span>
+                                        <span class="font-bold price-text">On Request <span class="font-sm"></span></span>
+                                        <span class="font-bold price-text">On Request <span class="font-sm"></span></span>
+                                    </div>
+                                </div>
+                                <button class="btn-sharp-outlined-black text-black" data-open-modal="PriceSection">Enquire Now <i class="icon-arrow-right2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-md-3 col-xs-12">
                     <div class="price-plan-content mb-2">
                         <div class="price-card-type1">
                             <div class="card-img">
@@ -400,7 +447,7 @@
        <h3 class="font-xl text-center text-primary mt-3 mb-1">FLOOR PLAN TYPES</h3>
       <!-- floor-type 1 -->
        <div class="temp3-floor-type-1">
-       <section class="floorplan-section" id="floorplan">
+       <section class="floorplan-section pt-2" id="floorplan">
         <div class="container">
          <div class="floorplan-content">
             <div class="row gap-2">
@@ -452,7 +499,31 @@
     <h3 class="font-xl text-center text-primary mt-3 mb-1">GALLERY TYPES</h3>
     <!-- gallery-type 1 -->
     <div class="temp3-gallery-type-1">
-
+        <div class="slider-wrap mt-3">
+            <div class="slider-main" data-slider="slider-main">
+                <div class="item">
+                   <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/2.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/3.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/4.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/5.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/4.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/3.jpeg" alt="">
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/www.godrej24-bangalore.com/runwal-bliss/images/banner/5.jpeg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
       <!-- gallery section end -->
 
@@ -481,17 +552,17 @@
                             <div class="tabs-container">
                                 <div class="row">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a class="" href="#tab-1">
-                                            <img data-src="../img/icons/map.svg" src="../img/icons/map.svg" alt="" class="lazy">
+                                        <li class="active"><a class="icon-location_pin font-xxl text-black" href="#tab-1">
+                                            <!-- <img data-src="../img/icons/map.svg" src="../img/icons/map.svg" alt="" class="lazy"> -->
                                         </a></li>
-                                        <li class=""><a class="" href="#tab-2">
-                                            <img data-src="../img/icons/cap.svg" src="../img/icons/cap.svg" alt="" class="lazy">
+                                        <li class=""><a class="icon-graduation-cap font-xxl text-black" href="#tab-2">
+                                            <!-- <img data-src="../img/icons/cap.svg" src="../img/icons/cap.svg" alt="" class="lazy"> -->
                                         </a></li>
-                                        <li class=""><a class="" href="#tab-3">
-                                            <img data-src="../img/icons/shopping-cart.svg" src="../img/icons/shopping-cart.svg" alt="" class="lazy">
+                                        <li class=""><a class="icon-cart1 font-xxl text-black" href="#tab-3">
+                                            <!-- <img data-src="../img/icons/shopping-cart.svg" src="../img/icons/shopping-cart.svg" alt="" class="lazy"> -->
                                         </a></li>
-                                        <li class=""><a class="" href="#tab-4">
-                                            <img data-src="../img/icons/hospital.svg" src="../img/icons/hospital.svg" alt="" class="lazy">
+                                        <li class=""><a class="icon-medkit font-xxl text-black" href="#tab-4">
+                                            <!-- <img data-src="../img/icons/hospital.svg" src="../img/icons/hospital.svg" alt="" class="lazy"> -->
                                         </a></li>
                                     </ul>
                                     <div class="tab-content font-lg">
@@ -587,20 +658,7 @@
      </div>
     <!-- social button section end -->
 
-         <!-- title section start -->
-         <h3 class="font-xl text-center text-primary mt-3 mb-1">TITLES TYPES</h3>
-         <!-- footer-type 1 -->
-         <div class="temp3-title-type-1">
-            <div class="main-title">
-                <div class="main-title-content">
-                    <p class="text-left">Location</p>
-                </div>
-                <div class="main-title-head">
-                    <h2 class="text-left">Vasant Lawns Thane West</h2>
-                </div>
-            </div>
-         </div>
-        <!-- title section end -->
+     
 
 
     </div>
@@ -608,5 +666,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/accordion.js"></script>
+    <script src="../js/customSlider.js"></script>
 </body>
 </html>
